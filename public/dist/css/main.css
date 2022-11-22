@@ -20,30 +20,4 @@ hr {
 
 img {
   max-width: 100%;
-}
-
-a {
-  color: #1ac888;
-}
-
-button {
-  color: #fff;
-  border: 0;
-  background: #326dee;
-  margin-bottom: 0.75rem;
-  border-radius: 20px;
-}
-
-.error {
-  color: #d32752;
-  border-color: #d32752;
-  border-style: solid;
-  margin: 0.75rem;
-  padding: 0.75rem;
-}
-
-.notification {
-  color: #1ac888;
-  border-color: #1ac888;
-  border-style: solid;
 }/*# sourceMappingURL=main.css.map */
