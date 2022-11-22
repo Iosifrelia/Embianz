@@ -1,2 +1,27 @@
 @import './reset';
+@import './variables';
 //
+a{
+ color: $secondary;
+}
+
+button{
+  color: #fff;
+  border: 0;
+  background: $primary;
+  margin-bottom: $base-margin;
+  border-radius: $base-border-radius;
+}
+
+.error{
+  color: $error;
+  border-color: $error;
+  border-style: solid;
+  margin: $base-margin;
+  padding: $base-padding;
+}
+.notification{
+  color: $secondary;
+  border-color: $secondary;
+  border-style: solid;
+}

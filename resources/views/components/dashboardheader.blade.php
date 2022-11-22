@@ -13,5 +13,5 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <!-- Styles -->
-        <link rel="stylesheet" href="public/dist/css/main.css">
+        <link rel="stylesheet" href="dist\css\main.css">
     </head>
