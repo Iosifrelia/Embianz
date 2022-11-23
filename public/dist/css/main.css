@@ -22,6 +22,1694 @@ img {
   max-width: 100%;
 }
 
+.text-primary {
+  color: #326dee;
+}
+
+.bg-primary {
+  background-color: #326dee;
+}
+
+.text-primary-light-1 {
+  color: #477cf0;
+}
+
+.bg-primary-light-1 {
+  background-color: #477cf0;
+}
+
+.text-primary-light-2 {
+  color: #5b8af1;
+}
+
+.bg-primary-light-2 {
+  background-color: #5b8af1;
+}
+
+.text-primary-light-3 {
+  color: #7099f3;
+}
+
+.bg-primary-light-3 {
+  background-color: #7099f3;
+}
+
+.text-primary-light-4 {
+  color: #84a7f5;
+}
+
+.bg-primary-light-4 {
+  background-color: #84a7f5;
+}
+
+.text-primary-light-5 {
+  color: #99b6f7;
+}
+
+.bg-primary-light-5 {
+  background-color: #99b6f7;
+}
+
+.text-primary-light-6 {
+  color: #adc5f8;
+}
+
+.bg-primary-light-6 {
+  background-color: #adc5f8;
+}
+
+.text-primary-light-7 {
+  color: #c2d3fa;
+}
+
+.bg-primary-light-7 {
+  background-color: #c2d3fa;
+}
+
+.text-primary-light-8 {
+  color: #d6e2fc;
+}
+
+.bg-primary-light-8 {
+  background-color: #d6e2fc;
+}
+
+.text-primary-light-9 {
+  color: #ebf0fd;
+}
+
+.bg-primary-light-9 {
+  background-color: #ebf0fd;
+}
+
+.text-primary-light-1 {
+  color: #2d62d6;
+}
+
+.bg-primary-light-1 {
+  background-color: #2d62d6;
+}
+
+.text-primary-light-2 {
+  color: #2857be;
+}
+
+.bg-primary-light-2 {
+  background-color: #2857be;
+}
+
+.text-primary-light-3 {
+  color: #234ca7;
+}
+
+.bg-primary-light-3 {
+  background-color: #234ca7;
+}
+
+.text-primary-light-4 {
+  color: #1e418f;
+}
+
+.bg-primary-light-4 {
+  background-color: #1e418f;
+}
+
+.text-primary-light-5 {
+  color: #193777;
+}
+
+.bg-primary-light-5 {
+  background-color: #193777;
+}
+
+.text-primary-light-6 {
+  color: #142c5f;
+}
+
+.bg-primary-light-6 {
+  background-color: #142c5f;
+}
+
+.text-primary-light-7 {
+  color: #0f2147;
+}
+
+.bg-primary-light-7 {
+  background-color: #0f2147;
+}
+
+.text-primary-light-8 {
+  color: #0a1630;
+}
+
+.bg-primary-light-8 {
+  background-color: #0a1630;
+}
+
+.text-primary-light-9 {
+  color: #050b18;
+}
+
+.bg-primary-light-9 {
+  background-color: #050b18;
+}
+
+.text-secondary {
+  color: #1ac888;
+}
+
+.bg-secondary {
+  background-color: #1ac888;
+}
+
+.text-secondary-light-1 {
+  color: #31ce94;
+}
+
+.bg-secondary-light-1 {
+  background-color: #31ce94;
+}
+
+.text-secondary-light-2 {
+  color: #48d3a0;
+}
+
+.bg-secondary-light-2 {
+  background-color: #48d3a0;
+}
+
+.text-secondary-light-3 {
+  color: #5fd9ac;
+}
+
+.bg-secondary-light-3 {
+  background-color: #5fd9ac;
+}
+
+.text-secondary-light-4 {
+  color: #76deb8;
+}
+
+.bg-secondary-light-4 {
+  background-color: #76deb8;
+}
+
+.text-secondary-light-5 {
+  color: #8de4c4;
+}
+
+.bg-secondary-light-5 {
+  background-color: #8de4c4;
+}
+
+.text-secondary-light-6 {
+  color: #a3e9cf;
+}
+
+.bg-secondary-light-6 {
+  background-color: #a3e9cf;
+}
+
+.text-secondary-light-7 {
+  color: #baefdb;
+}
+
+.bg-secondary-light-7 {
+  background-color: #baefdb;
+}
+
+.text-secondary-light-8 {
+  color: #d1f4e7;
+}
+
+.bg-secondary-light-8 {
+  background-color: #d1f4e7;
+}
+
+.text-secondary-light-9 {
+  color: #e8faf3;
+}
+
+.bg-secondary-light-9 {
+  background-color: #e8faf3;
+}
+
+.text-secondary-light-1 {
+  color: #17b47a;
+}
+
+.bg-secondary-light-1 {
+  background-color: #17b47a;
+}
+
+.text-secondary-light-2 {
+  color: #15a06d;
+}
+
+.bg-secondary-light-2 {
+  background-color: #15a06d;
+}
+
+.text-secondary-light-3 {
+  color: #128c5f;
+}
+
+.bg-secondary-light-3 {
+  background-color: #128c5f;
+}
+
+.text-secondary-light-4 {
+  color: #107852;
+}
+
+.bg-secondary-light-4 {
+  background-color: #107852;
+}
+
+.text-secondary-light-5 {
+  color: #0d6444;
+}
+
+.bg-secondary-light-5 {
+  background-color: #0d6444;
+}
+
+.text-secondary-light-6 {
+  color: #0a5036;
+}
+
+.bg-secondary-light-6 {
+  background-color: #0a5036;
+}
+
+.text-secondary-light-7 {
+  color: #083c29;
+}
+
+.bg-secondary-light-7 {
+  background-color: #083c29;
+}
+
+.text-secondary-light-8 {
+  color: #05281b;
+}
+
+.bg-secondary-light-8 {
+  background-color: #05281b;
+}
+
+.text-secondary-light-9 {
+  color: #03140e;
+}
+
+.bg-secondary-light-9 {
+  background-color: #03140e;
+}
+
+.text-error {
+  color: #d32752;
+}
+
+.bg-error {
+  background-color: #d32752;
+}
+
+.text-error-light-1 {
+  color: #d73d63;
+}
+
+.bg-error-light-1 {
+  background-color: #d73d63;
+}
+
+.text-error-light-2 {
+  color: #dc5275;
+}
+
+.bg-error-light-2 {
+  background-color: #dc5275;
+}
+
+.text-error-light-3 {
+  color: #e06886;
+}
+
+.bg-error-light-3 {
+  background-color: #e06886;
+}
+
+.text-error-light-4 {
+  color: #e57d97;
+}
+
+.bg-error-light-4 {
+  background-color: #e57d97;
+}
+
+.text-error-light-5 {
+  color: #e993a9;
+}
+
+.bg-error-light-5 {
+  background-color: #e993a9;
+}
+
+.text-error-light-6 {
+  color: #eda9ba;
+}
+
+.bg-error-light-6 {
+  background-color: #eda9ba;
+}
+
+.text-error-light-7 {
+  color: #f2becb;
+}
+
+.bg-error-light-7 {
+  background-color: #f2becb;
+}
+
+.text-error-light-8 {
+  color: #f6d4dc;
+}
+
+.bg-error-light-8 {
+  background-color: #f6d4dc;
+}
+
+.text-error-light-9 {
+  color: #fbe9ee;
+}
+
+.bg-error-light-9 {
+  background-color: #fbe9ee;
+}
+
+.text-error-light-1 {
+  color: #be234a;
+}
+
+.bg-error-light-1 {
+  background-color: #be234a;
+}
+
+.text-error-light-2 {
+  color: #a91f42;
+}
+
+.bg-error-light-2 {
+  background-color: #a91f42;
+}
+
+.text-error-light-3 {
+  color: #941b39;
+}
+
+.bg-error-light-3 {
+  background-color: #941b39;
+}
+
+.text-error-light-4 {
+  color: #7f1731;
+}
+
+.bg-error-light-4 {
+  background-color: #7f1731;
+}
+
+.text-error-light-5 {
+  color: #6a1429;
+}
+
+.bg-error-light-5 {
+  background-color: #6a1429;
+}
+
+.text-error-light-6 {
+  color: #541021;
+}
+
+.bg-error-light-6 {
+  background-color: #541021;
+}
+
+.text-error-light-7 {
+  color: #3f0c19;
+}
+
+.bg-error-light-7 {
+  background-color: #3f0c19;
+}
+
+.text-error-light-8 {
+  color: #2a0810;
+}
+
+.bg-error-light-8 {
+  background-color: #2a0810;
+}
+
+.text-error-light-9 {
+  color: #150408;
+}
+
+.bg-error-light-9 {
+  background-color: #150408;
+}
+
+.text-info {
+  color: #f6c31c;
+}
+
+.bg-info {
+  background-color: #f6c31c;
+}
+
+.text-info-light-1 {
+  color: #f7c933;
+}
+
+.bg-info-light-1 {
+  background-color: #f7c933;
+}
+
+.text-info-light-2 {
+  color: #f8cf49;
+}
+
+.bg-info-light-2 {
+  background-color: #f8cf49;
+}
+
+.text-info-light-3 {
+  color: #f9d560;
+}
+
+.bg-info-light-3 {
+  background-color: #f9d560;
+}
+
+.text-info-light-4 {
+  color: #fadb77;
+}
+
+.bg-info-light-4 {
+  background-color: #fadb77;
+}
+
+.text-info-light-5 {
+  color: #fbe18e;
+}
+
+.bg-info-light-5 {
+  background-color: #fbe18e;
+}
+
+.text-info-light-6 {
+  color: #fbe7a4;
+}
+
+.bg-info-light-6 {
+  background-color: #fbe7a4;
+}
+
+.text-info-light-7 {
+  color: #fcedbb;
+}
+
+.bg-info-light-7 {
+  background-color: #fcedbb;
+}
+
+.text-info-light-8 {
+  color: #fdf3d2;
+}
+
+.bg-info-light-8 {
+  background-color: #fdf3d2;
+}
+
+.text-info-light-9 {
+  color: #fef9e8;
+}
+
+.bg-info-light-9 {
+  background-color: #fef9e8;
+}
+
+.text-info-light-1 {
+  color: #ddb019;
+}
+
+.bg-info-light-1 {
+  background-color: #ddb019;
+}
+
+.text-info-light-2 {
+  color: #c59c16;
+}
+
+.bg-info-light-2 {
+  background-color: #c59c16;
+}
+
+.text-info-light-3 {
+  color: #ac8914;
+}
+
+.bg-info-light-3 {
+  background-color: #ac8914;
+}
+
+.text-info-light-4 {
+  color: #947511;
+}
+
+.bg-info-light-4 {
+  background-color: #947511;
+}
+
+.text-info-light-5 {
+  color: #7b620e;
+}
+
+.bg-info-light-5 {
+  background-color: #7b620e;
+}
+
+.text-info-light-6 {
+  color: #624e0b;
+}
+
+.bg-info-light-6 {
+  background-color: #624e0b;
+}
+
+.text-info-light-7 {
+  color: #4a3b08;
+}
+
+.bg-info-light-7 {
+  background-color: #4a3b08;
+}
+
+.text-info-light-8 {
+  color: #312706;
+}
+
+.bg-info-light-8 {
+  background-color: #312706;
+}
+
+.text-info-light-9 {
+  color: #191403;
+}
+
+.bg-info-light-9 {
+  background-color: #191403;
+}
+
+.text-blue {
+  color: #1c1ce4;
+}
+
+.bg-blue {
+  background-color: #1c1ce4;
+}
+
+.text-blue-light-1 {
+  color: #3333e7;
+}
+
+.bg-blue-light-1 {
+  background-color: #3333e7;
+}
+
+.text-blue-light-2 {
+  color: #4949e9;
+}
+
+.bg-blue-light-2 {
+  background-color: #4949e9;
+}
+
+.text-blue-light-3 {
+  color: #6060ec;
+}
+
+.bg-blue-light-3 {
+  background-color: #6060ec;
+}
+
+.text-blue-light-4 {
+  color: #7777ef;
+}
+
+.bg-blue-light-4 {
+  background-color: #7777ef;
+}
+
+.text-blue-light-5 {
+  color: #8e8ef2;
+}
+
+.bg-blue-light-5 {
+  background-color: #8e8ef2;
+}
+
+.text-blue-light-6 {
+  color: #a4a4f4;
+}
+
+.bg-blue-light-6 {
+  background-color: #a4a4f4;
+}
+
+.text-blue-light-7 {
+  color: #bbbbf7;
+}
+
+.bg-blue-light-7 {
+  background-color: #bbbbf7;
+}
+
+.text-blue-light-8 {
+  color: #d2d2fa;
+}
+
+.bg-blue-light-8 {
+  background-color: #d2d2fa;
+}
+
+.text-blue-light-9 {
+  color: #e8e8fc;
+}
+
+.bg-blue-light-9 {
+  background-color: #e8e8fc;
+}
+
+.text-blue-light-1 {
+  color: #1919cd;
+}
+
+.bg-blue-light-1 {
+  background-color: #1919cd;
+}
+
+.text-blue-light-2 {
+  color: #1616b6;
+}
+
+.bg-blue-light-2 {
+  background-color: #1616b6;
+}
+
+.text-blue-light-3 {
+  color: #1414a0;
+}
+
+.bg-blue-light-3 {
+  background-color: #1414a0;
+}
+
+.text-blue-light-4 {
+  color: #111189;
+}
+
+.bg-blue-light-4 {
+  background-color: #111189;
+}
+
+.text-blue-light-5 {
+  color: #0e0e72;
+}
+
+.bg-blue-light-5 {
+  background-color: #0e0e72;
+}
+
+.text-blue-light-6 {
+  color: #0b0b5b;
+}
+
+.bg-blue-light-6 {
+  background-color: #0b0b5b;
+}
+
+.text-blue-light-7 {
+  color: #080844;
+}
+
+.bg-blue-light-7 {
+  background-color: #080844;
+}
+
+.text-blue-light-8 {
+  color: #06062e;
+}
+
+.bg-blue-light-8 {
+  background-color: #06062e;
+}
+
+.text-blue-light-9 {
+  color: #030317;
+}
+
+.bg-blue-light-9 {
+  background-color: #030317;
+}
+
+.text-red {
+  color: red;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.text-red-light-1 {
+  color: #ff1a1a;
+}
+
+.bg-red-light-1 {
+  background-color: #ff1a1a;
+}
+
+.text-red-light-2 {
+  color: #ff3333;
+}
+
+.bg-red-light-2 {
+  background-color: #ff3333;
+}
+
+.text-red-light-3 {
+  color: #ff4d4d;
+}
+
+.bg-red-light-3 {
+  background-color: #ff4d4d;
+}
+
+.text-red-light-4 {
+  color: #ff6666;
+}
+
+.bg-red-light-4 {
+  background-color: #ff6666;
+}
+
+.text-red-light-5 {
+  color: #ff8080;
+}
+
+.bg-red-light-5 {
+  background-color: #ff8080;
+}
+
+.text-red-light-6 {
+  color: #ff9999;
+}
+
+.bg-red-light-6 {
+  background-color: #ff9999;
+}
+
+.text-red-light-7 {
+  color: #ffb3b3;
+}
+
+.bg-red-light-7 {
+  background-color: #ffb3b3;
+}
+
+.text-red-light-8 {
+  color: #ffcccc;
+}
+
+.bg-red-light-8 {
+  background-color: #ffcccc;
+}
+
+.text-red-light-9 {
+  color: #ffe6e6;
+}
+
+.bg-red-light-9 {
+  background-color: #ffe6e6;
+}
+
+.text-red-light-1 {
+  color: #e60000;
+}
+
+.bg-red-light-1 {
+  background-color: #e60000;
+}
+
+.text-red-light-2 {
+  color: #cc0000;
+}
+
+.bg-red-light-2 {
+  background-color: #cc0000;
+}
+
+.text-red-light-3 {
+  color: #b30000;
+}
+
+.bg-red-light-3 {
+  background-color: #b30000;
+}
+
+.text-red-light-4 {
+  color: #990000;
+}
+
+.bg-red-light-4 {
+  background-color: #990000;
+}
+
+.text-red-light-5 {
+  color: maroon;
+}
+
+.bg-red-light-5 {
+  background-color: maroon;
+}
+
+.text-red-light-6 {
+  color: #660000;
+}
+
+.bg-red-light-6 {
+  background-color: #660000;
+}
+
+.text-red-light-7 {
+  color: #4d0000;
+}
+
+.bg-red-light-7 {
+  background-color: #4d0000;
+}
+
+.text-red-light-8 {
+  color: #330000;
+}
+
+.bg-red-light-8 {
+  background-color: #330000;
+}
+
+.text-red-light-9 {
+  color: #1a0000;
+}
+
+.bg-red-light-9 {
+  background-color: #1a0000;
+}
+
+.text-yellow {
+  color: yellow;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.text-yellow-light-1 {
+  color: #ffff1a;
+}
+
+.bg-yellow-light-1 {
+  background-color: #ffff1a;
+}
+
+.text-yellow-light-2 {
+  color: #ffff33;
+}
+
+.bg-yellow-light-2 {
+  background-color: #ffff33;
+}
+
+.text-yellow-light-3 {
+  color: #ffff4d;
+}
+
+.bg-yellow-light-3 {
+  background-color: #ffff4d;
+}
+
+.text-yellow-light-4 {
+  color: #ffff66;
+}
+
+.bg-yellow-light-4 {
+  background-color: #ffff66;
+}
+
+.text-yellow-light-5 {
+  color: #ffff80;
+}
+
+.bg-yellow-light-5 {
+  background-color: #ffff80;
+}
+
+.text-yellow-light-6 {
+  color: #ffff99;
+}
+
+.bg-yellow-light-6 {
+  background-color: #ffff99;
+}
+
+.text-yellow-light-7 {
+  color: #ffffb3;
+}
+
+.bg-yellow-light-7 {
+  background-color: #ffffb3;
+}
+
+.text-yellow-light-8 {
+  color: #ffffcc;
+}
+
+.bg-yellow-light-8 {
+  background-color: #ffffcc;
+}
+
+.text-yellow-light-9 {
+  color: #ffffe6;
+}
+
+.bg-yellow-light-9 {
+  background-color: #ffffe6;
+}
+
+.text-yellow-light-1 {
+  color: #e6e600;
+}
+
+.bg-yellow-light-1 {
+  background-color: #e6e600;
+}
+
+.text-yellow-light-2 {
+  color: #cccc00;
+}
+
+.bg-yellow-light-2 {
+  background-color: #cccc00;
+}
+
+.text-yellow-light-3 {
+  color: #b3b300;
+}
+
+.bg-yellow-light-3 {
+  background-color: #b3b300;
+}
+
+.text-yellow-light-4 {
+  color: #999900;
+}
+
+.bg-yellow-light-4 {
+  background-color: #999900;
+}
+
+.text-yellow-light-5 {
+  color: olive;
+}
+
+.bg-yellow-light-5 {
+  background-color: olive;
+}
+
+.text-yellow-light-6 {
+  color: #666600;
+}
+
+.bg-yellow-light-6 {
+  background-color: #666600;
+}
+
+.text-yellow-light-7 {
+  color: #4d4d00;
+}
+
+.bg-yellow-light-7 {
+  background-color: #4d4d00;
+}
+
+.text-yellow-light-8 {
+  color: #333300;
+}
+
+.bg-yellow-light-8 {
+  background-color: #333300;
+}
+
+.text-yellow-light-9 {
+  color: #1a1a00;
+}
+
+.bg-yellow-light-9 {
+  background-color: #1a1a00;
+}
+
+.text-green {
+  color: green;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.text-green-light-1 {
+  color: #1a8d1a;
+}
+
+.bg-green-light-1 {
+  background-color: #1a8d1a;
+}
+
+.text-green-light-2 {
+  color: #339933;
+}
+
+.bg-green-light-2 {
+  background-color: #339933;
+}
+
+.text-green-light-3 {
+  color: #4da64d;
+}
+
+.bg-green-light-3 {
+  background-color: #4da64d;
+}
+
+.text-green-light-4 {
+  color: #66b366;
+}
+
+.bg-green-light-4 {
+  background-color: #66b366;
+}
+
+.text-green-light-5 {
+  color: #80c080;
+}
+
+.bg-green-light-5 {
+  background-color: #80c080;
+}
+
+.text-green-light-6 {
+  color: #99cc99;
+}
+
+.bg-green-light-6 {
+  background-color: #99cc99;
+}
+
+.text-green-light-7 {
+  color: #b3d9b3;
+}
+
+.bg-green-light-7 {
+  background-color: #b3d9b3;
+}
+
+.text-green-light-8 {
+  color: #cce6cc;
+}
+
+.bg-green-light-8 {
+  background-color: #cce6cc;
+}
+
+.text-green-light-9 {
+  color: #e6f2e6;
+}
+
+.bg-green-light-9 {
+  background-color: #e6f2e6;
+}
+
+.text-green-light-1 {
+  color: #007300;
+}
+
+.bg-green-light-1 {
+  background-color: #007300;
+}
+
+.text-green-light-2 {
+  color: #006600;
+}
+
+.bg-green-light-2 {
+  background-color: #006600;
+}
+
+.text-green-light-3 {
+  color: #005a00;
+}
+
+.bg-green-light-3 {
+  background-color: #005a00;
+}
+
+.text-green-light-4 {
+  color: #004d00;
+}
+
+.bg-green-light-4 {
+  background-color: #004d00;
+}
+
+.text-green-light-5 {
+  color: #004000;
+}
+
+.bg-green-light-5 {
+  background-color: #004000;
+}
+
+.text-green-light-6 {
+  color: #003300;
+}
+
+.bg-green-light-6 {
+  background-color: #003300;
+}
+
+.text-green-light-7 {
+  color: #002600;
+}
+
+.bg-green-light-7 {
+  background-color: #002600;
+}
+
+.text-green-light-8 {
+  color: #001a00;
+}
+
+.bg-green-light-8 {
+  background-color: #001a00;
+}
+
+.text-green-light-9 {
+  color: #000d00;
+}
+
+.bg-green-light-9 {
+  background-color: #000d00;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+.text-orange-light-1 {
+  color: #ffae1a;
+}
+
+.bg-orange-light-1 {
+  background-color: #ffae1a;
+}
+
+.text-orange-light-2 {
+  color: #ffb733;
+}
+
+.bg-orange-light-2 {
+  background-color: #ffb733;
+}
+
+.text-orange-light-3 {
+  color: #ffc04d;
+}
+
+.bg-orange-light-3 {
+  background-color: #ffc04d;
+}
+
+.text-orange-light-4 {
+  color: #ffc966;
+}
+
+.bg-orange-light-4 {
+  background-color: #ffc966;
+}
+
+.text-orange-light-5 {
+  color: #ffd280;
+}
+
+.bg-orange-light-5 {
+  background-color: #ffd280;
+}
+
+.text-orange-light-6 {
+  color: #ffdb99;
+}
+
+.bg-orange-light-6 {
+  background-color: #ffdb99;
+}
+
+.text-orange-light-7 {
+  color: #ffe4b3;
+}
+
+.bg-orange-light-7 {
+  background-color: #ffe4b3;
+}
+
+.text-orange-light-8 {
+  color: #ffedcc;
+}
+
+.bg-orange-light-8 {
+  background-color: #ffedcc;
+}
+
+.text-orange-light-9 {
+  color: #fff6e6;
+}
+
+.bg-orange-light-9 {
+  background-color: #fff6e6;
+}
+
+.text-orange-light-1 {
+  color: #e69500;
+}
+
+.bg-orange-light-1 {
+  background-color: #e69500;
+}
+
+.text-orange-light-2 {
+  color: #cc8400;
+}
+
+.bg-orange-light-2 {
+  background-color: #cc8400;
+}
+
+.text-orange-light-3 {
+  color: #b37400;
+}
+
+.bg-orange-light-3 {
+  background-color: #b37400;
+}
+
+.text-orange-light-4 {
+  color: #996300;
+}
+
+.bg-orange-light-4 {
+  background-color: #996300;
+}
+
+.text-orange-light-5 {
+  color: #805300;
+}
+
+.bg-orange-light-5 {
+  background-color: #805300;
+}
+
+.text-orange-light-6 {
+  color: #664200;
+}
+
+.bg-orange-light-6 {
+  background-color: #664200;
+}
+
+.text-orange-light-7 {
+  color: #4d3200;
+}
+
+.bg-orange-light-7 {
+  background-color: #4d3200;
+}
+
+.text-orange-light-8 {
+  color: #332100;
+}
+
+.bg-orange-light-8 {
+  background-color: #332100;
+}
+
+.text-orange-light-9 {
+  color: #1a1100;
+}
+
+.bg-orange-light-9 {
+  background-color: #1a1100;
+}
+
+.text-purple {
+  color: purple;
+}
+
+.bg-purple {
+  background-color: purple;
+}
+
+.text-purple-light-1 {
+  color: #8d1a8d;
+}
+
+.bg-purple-light-1 {
+  background-color: #8d1a8d;
+}
+
+.text-purple-light-2 {
+  color: #993399;
+}
+
+.bg-purple-light-2 {
+  background-color: #993399;
+}
+
+.text-purple-light-3 {
+  color: #a64da6;
+}
+
+.bg-purple-light-3 {
+  background-color: #a64da6;
+}
+
+.text-purple-light-4 {
+  color: #b366b3;
+}
+
+.bg-purple-light-4 {
+  background-color: #b366b3;
+}
+
+.text-purple-light-5 {
+  color: #c080c0;
+}
+
+.bg-purple-light-5 {
+  background-color: #c080c0;
+}
+
+.text-purple-light-6 {
+  color: #cc99cc;
+}
+
+.bg-purple-light-6 {
+  background-color: #cc99cc;
+}
+
+.text-purple-light-7 {
+  color: #d9b3d9;
+}
+
+.bg-purple-light-7 {
+  background-color: #d9b3d9;
+}
+
+.text-purple-light-8 {
+  color: #e6cce6;
+}
+
+.bg-purple-light-8 {
+  background-color: #e6cce6;
+}
+
+.text-purple-light-9 {
+  color: #f2e6f2;
+}
+
+.bg-purple-light-9 {
+  background-color: #f2e6f2;
+}
+
+.text-purple-light-1 {
+  color: #730073;
+}
+
+.bg-purple-light-1 {
+  background-color: #730073;
+}
+
+.text-purple-light-2 {
+  color: #660066;
+}
+
+.bg-purple-light-2 {
+  background-color: #660066;
+}
+
+.text-purple-light-3 {
+  color: #5a005a;
+}
+
+.bg-purple-light-3 {
+  background-color: #5a005a;
+}
+
+.text-purple-light-4 {
+  color: #4d004d;
+}
+
+.bg-purple-light-4 {
+  background-color: #4d004d;
+}
+
+.text-purple-light-5 {
+  color: #400040;
+}
+
+.bg-purple-light-5 {
+  background-color: #400040;
+}
+
+.text-purple-light-6 {
+  color: #330033;
+}
+
+.bg-purple-light-6 {
+  background-color: #330033;
+}
+
+.text-purple-light-7 {
+  color: #260026;
+}
+
+.bg-purple-light-7 {
+  background-color: #260026;
+}
+
+.text-purple-light-8 {
+  color: #1a001a;
+}
+
+.bg-purple-light-8 {
+  background-color: #1a001a;
+}
+
+.text-purple-light-9 {
+  color: #0d000d;
+}
+
+.bg-purple-light-9 {
+  background-color: #0d000d;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.bg-gray {
+  background-color: gray;
+}
+
+.text-gray-light-1 {
+  color: #8d8d8d;
+}
+
+.bg-gray-light-1 {
+  background-color: #8d8d8d;
+}
+
+.text-gray-light-2 {
+  color: #999999;
+}
+
+.bg-gray-light-2 {
+  background-color: #999999;
+}
+
+.text-gray-light-3 {
+  color: #a6a6a6;
+}
+
+.bg-gray-light-3 {
+  background-color: #a6a6a6;
+}
+
+.text-gray-light-4 {
+  color: #b3b3b3;
+}
+
+.bg-gray-light-4 {
+  background-color: #b3b3b3;
+}
+
+.text-gray-light-5 {
+  color: silver;
+}
+
+.bg-gray-light-5 {
+  background-color: silver;
+}
+
+.text-gray-light-6 {
+  color: #cccccc;
+}
+
+.bg-gray-light-6 {
+  background-color: #cccccc;
+}
+
+.text-gray-light-7 {
+  color: #d9d9d9;
+}
+
+.bg-gray-light-7 {
+  background-color: #d9d9d9;
+}
+
+.text-gray-light-8 {
+  color: #e6e6e6;
+}
+
+.bg-gray-light-8 {
+  background-color: #e6e6e6;
+}
+
+.text-gray-light-9 {
+  color: #f2f2f2;
+}
+
+.bg-gray-light-9 {
+  background-color: #f2f2f2;
+}
+
+.text-gray-light-1 {
+  color: #737373;
+}
+
+.bg-gray-light-1 {
+  background-color: #737373;
+}
+
+.text-gray-light-2 {
+  color: #666666;
+}
+
+.bg-gray-light-2 {
+  background-color: #666666;
+}
+
+.text-gray-light-3 {
+  color: #5a5a5a;
+}
+
+.bg-gray-light-3 {
+  background-color: #5a5a5a;
+}
+
+.text-gray-light-4 {
+  color: #4d4d4d;
+}
+
+.bg-gray-light-4 {
+  background-color: #4d4d4d;
+}
+
+.text-gray-light-5 {
+  color: #404040;
+}
+
+.bg-gray-light-5 {
+  background-color: #404040;
+}
+
+.text-gray-light-6 {
+  color: #333333;
+}
+
+.bg-gray-light-6 {
+  background-color: #333333;
+}
+
+.text-gray-light-7 {
+  color: #262626;
+}
+
+.bg-gray-light-7 {
+  background-color: #262626;
+}
+
+.text-gray-light-8 {
+  color: #1a1a1a;
+}
+
+.bg-gray-light-8 {
+  background-color: #1a1a1a;
+}
+
+.text-gray-light-9 {
+  color: #0d0d0d;
+}
+
+.bg-gray-light-9 {
+  background-color: #0d0d0d;
+}
+
+.text-black {
+  color: black;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.text-white {
+  color: white;
+}
+
+.bg-white {
+  background-color: white;
+}
+
 .card {
   display: block;
   padding: 0.75rem;
