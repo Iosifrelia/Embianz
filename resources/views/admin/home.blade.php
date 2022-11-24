@@ -1,2 +1,4 @@
-<x-app-layout>
-</x-app-layout>
+<x-dashboardheader />
+<x-dashboardnavbar />
+
+<x-dashboardfooter />
