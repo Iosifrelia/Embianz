@@ -1,4 +1,4 @@
-<nav class="navbar">
+<nav class="navbar-primary">
     <div class="container">
         <h1 class="site-title">Dashboard</h1>
         <ul class="display-f">
