@@ -4,6 +4,11 @@ $primary: #326dee !default;
 $secondary: #1ac888 !default;
 $error: #d32752 !default;
 $info: #f6c31c !default;
+$bg: #28283f !default;
+$sidebar-bg: #2e2e48 !default;
+$sidebar-active-bg: rgba(23, 23, 37, 0.8) !default;
+$border:#7e73ff !default;
+$transition: all 0.5s ease-in-out; 
 
 //color palette
 $colors: (
@@ -11,6 +16,7 @@ $colors: (
   "secondary": $secondary,
   "error": $error,
   "info": $info,
+  "bg": $bg,
   "blue": #1c1ce4,
   "red": red,
   "yellow": yellow,
