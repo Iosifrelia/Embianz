@@ -10,3 +10,20 @@
   );
   filter: drop-shadow(0rem 0.4rem 3.3rem rgba(0, 0, 0, 0.25));
 }
+
+%fixed-layout{
+  position: fixed;
+  left: 0;
+  @include wh(15rem, 100%);
+  overflow-y: scroll;
+  background: $sidebar-bg;
+  box-shadow: 0 0.1rem 1rem $sidebar-active-bg;
+  &::-webkit-scrollbar{
+    @include w(0);
+  }
+}
+
+.sidebar{
+  @extend %fixed-layout;
+}
+

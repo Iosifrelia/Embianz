@@ -3962,6 +3962,19 @@ img {
   font-weight: normal;
 }
 
+.sidebar {
+  position: fixed;
+  left: 0;
+  width: 15rem;
+  height: 100%;
+  overflow-y: scroll;
+  background: #2e2e48;
+  box-shadow: 0 0.1rem 1rem rgba(23, 23, 37, 0.8);
+}
+.sidebar::-webkit-scrollbar {
+  width: 0;
+}
+
 .p-0 {
   padding: 0;
 }
