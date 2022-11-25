@@ -17,6 +17,9 @@
   .container{
     @extend %flex-layout;
   }
+  img{
+    width: 16rem;
+  }
 }
 
 @each $key, $val in $colors {
