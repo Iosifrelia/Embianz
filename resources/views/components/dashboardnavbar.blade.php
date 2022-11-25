@@ -1,5 +1,5 @@
 <nav class="navbar-bg">
-        <h1 class="site-title">Dashboard logo</h1>
+        <img src="\images\rectangular_light.png"  alt="">
         <div><form action="" method="post">
             <input type="text" name="" id="" class="mr-2">
             <input type="button" value="Submit" class="btn-secondary br-md">
