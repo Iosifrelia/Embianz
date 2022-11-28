@@ -1,0 +1,9 @@
+ //usefull mixin
+ @mixin wh($w,$h) {
+  width: $w;
+  height: $h;
+ }
+
+ @mixin w($w) {
+  width: $w;
+ }

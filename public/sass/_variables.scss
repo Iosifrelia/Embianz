@@ -1,0 +1,50 @@
+//theme colors
+//colors definition
+$primary: #326dee !default;
+$secondary: #1ac888 !default;
+$error: #d32752 !default;
+$info: #f6c31c !default;
+$bg: #28283f !default;
+$sidebar-bg: #2e2e48 !default;
+$sidebar-active-bg: rgba(23, 23, 37, 0.8) !default;
+$border:#7e73ff !default;
+$transition: all 0.5s ease-in-out; 
+
+//color palette
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "error": $error,
+  "info": $info,
+  "bg": $bg,
+  "blue": #1c1ce4,
+  "red": red,
+  "yellow": yellow,
+  "green": green,
+  "orange": orange,
+  "purple": purple,
+  "gray": gray,
+  "black": black,
+  "white": white,
+);
+
+
+
+//spacing variables
+$base-padding: 0.75rem !default;
+$base-margin: 0.75rem !default;
+
+
+//border 
+$base-border-thickness: 1px !default;
+$base-border-radius: 20px !default;
+
+//box-shadow
+$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1) !default;
+
+//font sizes
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75 !default;
+$font-size-lg: $base-font-size * 1.5 !default;
+$font-size-xl: $base-font-size * 2 !default;
+$font-size-xxl: $base-font-size * 3 !default;
