@@ -27,16 +27,18 @@
   }
 
   & .menu{
+
     & .list{
       position: relative;
       transition: $transition;
+     
       &::before{
         content: "";
         position: absolute;
         top: 0;
         left: 0;
-        @include wh(0.2rem, 100%);
-        background: $border;
+        @include wh(0.3rem, 100%);
+        background: $secondary;     
         border-radius: 0.2rem;
         opacity: 0;
         pointer-events: none;
@@ -50,9 +52,23 @@
       & .link,
       & .settings{
         display: flex;
-        color: map-get($colors, white );
+        color: map-get($colors, 'white');
+        font-size: $font-size-lg;
+        font-weight: bold;
+        align-items: center;
+
       }
+       & .icon{
+        display: flex;
+        align-items: center;
+        @include wh(3rem, auto);
+        object-fit: cover;
+        align-items: center;
+       }
     }
+  }
+  .copyright{
+   //position for copyright and social icons
   }
 }
 
