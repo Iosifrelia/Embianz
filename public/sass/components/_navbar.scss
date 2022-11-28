@@ -15,10 +15,16 @@
     font-size: $font-size-lg;
   }
   .container{
-    @extend %flex-layout;
+    @extend %flex-layout
   }
-  img{
-    width: 16rem;
+  & .logo{
+    display: flex;
+    align-items: center;
+    
+    & img{
+      @include wh(15rem, auto);
+      object-fit: cover;
+    }
   }
 }
 

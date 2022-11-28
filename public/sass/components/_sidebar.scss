@@ -18,12 +18,12 @@
   overflow-y: scroll;
   background: $sidebar-bg;
   box-shadow: 0 0.1rem 1rem $sidebar-active-bg;
-  &::-webkit-scrollbar{
-    @include w(0);
-  }
 }
 
 .sidebar{
   @extend %fixed-layout;
+  &::-webkit-scrollbar{
+    @include w(0);
+  }
 }
 

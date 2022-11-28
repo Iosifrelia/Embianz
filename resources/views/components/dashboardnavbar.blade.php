@@ -1,5 +1,7 @@
 <nav class="navbar-bg">
+    <div class="logo">
         <img src="\images\rectangular_light.png"  alt="">
+    </div>
         <div><form action="" method="post">
             <input type="text" name="" id="" class="mr-2">
             <input type="button" value="Search" class="btn-secondary br-md">

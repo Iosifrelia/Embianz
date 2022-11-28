@@ -15,6 +15,10 @@ img {
   max-width: 100%;
 }
 
+.section-heading {
+  color: #1ac888;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -3786,8 +3790,15 @@ img {
 .navbar .site-title, .navbar-white .site-title, .navbar-black .site-title, .navbar-gray .site-title, .navbar-purple .site-title, .navbar-orange .site-title, .navbar-green .site-title, .navbar-yellow .site-title, .navbar-red .site-title, .navbar-blue .site-title, .navbar-bg .site-title, .navbar-info .site-title, .navbar-error .site-title, .navbar-secondary .site-title, .navbar-primary .site-title {
   font-size: 1.5rem;
 }
-.navbar img, .navbar-white img, .navbar-black img, .navbar-gray img, .navbar-purple img, .navbar-orange img, .navbar-green img, .navbar-yellow img, .navbar-red img, .navbar-blue img, .navbar-bg img, .navbar-info img, .navbar-error img, .navbar-secondary img, .navbar-primary img {
-  width: 16rem;
+.navbar .logo, .navbar-white .logo, .navbar-black .logo, .navbar-gray .logo, .navbar-purple .logo, .navbar-orange .logo, .navbar-green .logo, .navbar-yellow .logo, .navbar-red .logo, .navbar-blue .logo, .navbar-bg .logo, .navbar-info .logo, .navbar-error .logo, .navbar-secondary .logo, .navbar-primary .logo {
+  display: flex;
+  align-items: center;
+}
+.navbar .logo img, .navbar-white .logo img, .navbar-black .logo img, .navbar-gray .logo img, .navbar-purple .logo img, .navbar-orange .logo img, .navbar-green .logo img, .navbar-yellow .logo img, .navbar-red .logo img, .navbar-blue .logo img, .navbar-bg .logo img, .navbar-info .logo img, .navbar-error .logo img, .navbar-secondary .logo img, .navbar-primary .logo img {
+  width: 15rem;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .navbar-primary {
@@ -3975,6 +3986,7 @@ img {
   background: #2e2e48;
   box-shadow: 0 0.1rem 1rem rgba(23, 23, 37, 0.8);
 }
+
 .sidebar::-webkit-scrollbar {
   width: 0;
 }
