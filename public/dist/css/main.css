@@ -3990,6 +3990,30 @@ img {
 .sidebar::-webkit-scrollbar {
   width: 0;
 }
+.sidebar .menu .list {
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.sidebar .menu .list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.2rem;
+  height: 100%;
+  background: #7e73ff;
+  border-radius: 0.2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+.sidebar .menu .list:hover::before, .sidebar .menu .list.active::before {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+.sidebar .menu .list .link, .sidebar .menu .list .settings {
+  display: flex;
+}
 
 .p-0 {
   padding: 0;

@@ -25,5 +25,34 @@
   &::-webkit-scrollbar{
     @include w(0);
   }
+
+  & .menu{
+    & .list{
+      position: relative;
+      transition: $transition;
+      &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include wh(0.2rem, 100%);
+        background: $border;
+        border-radius: 0.2rem;
+        opacity: 0;
+        pointer-events: none;
+        transition: $transition;
+      }
+      &:hover::before,
+      &.active::before{
+        opacity: 1;
+        transition: $transition;
+      }
+      & .link,
+      & .settings{
+        display: flex;
+        color: map-get($colors, white );
+      }
+    }
+  }
 }
 
