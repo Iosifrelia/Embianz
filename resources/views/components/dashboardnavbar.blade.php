@@ -10,7 +10,7 @@
         </div>
         <ul class="display-f">
             <li class="ml-1">
-                <button class="btn-bg-light-2 br-xs o-80">{{$user}}</button>
+                <button id="button_user" class="btn-bg-secondary-light-2 font-lg pb-1 pl-2 pt-1 br-xs o-80">{{$user}}<img src="/images/chevron-down.svg" alt="icon" class="ml-1 mr-1"> </button>
             {{-- add dropdown element // show profile and logout --}}
             </li>
         </ul> 

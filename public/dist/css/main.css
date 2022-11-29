@@ -2748,6 +2748,10 @@ button {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.navbar #button_user, .navbar-white #button_user, .navbar-black #button_user, .navbar-gray #button_user, .navbar-sidebar-bg #button_user, .navbar-bg #button_user, .navbar-info #button_user, .navbar-error #button_user, .navbar-secondary #button_user, .navbar-primary #button_user {
+  text-align: center;
+  justify-content: center;
+}
 
 .navbar-primary {
   background-color: #326dee;
