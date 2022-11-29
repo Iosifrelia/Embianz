@@ -8,7 +8,7 @@
     </li>
     <li class="list p-2 pb-3 font-lg">
       <a href="#" class="link">
-        
+        <img src="/images/categoryicon.png" alt="icon" class="icon mr-2">
         <span>Category</span>
       </a>
     </li>
