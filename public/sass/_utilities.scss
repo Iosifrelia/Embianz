@@ -135,6 +135,7 @@ $utilities: (
       "xs": math.div($base-border-radius, 4),
       "sm": math.div($base-border-radius, 2),
       "lg": $base-border-radius *2,
+      "xl": $base-border-radius *4,
       "full": 50%
     ),
   ),
