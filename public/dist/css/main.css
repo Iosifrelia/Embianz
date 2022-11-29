@@ -2942,6 +2942,32 @@ button {
   box-shadow: 0.2rem 0.1rem 1rem rgba(23, 23, 37, 0.8);
 }
 
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #1ac888;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .p-0 {
   padding: 0;
 }
@@ -3313,4 +3339,20 @@ button {
 .pos-sticky {
   position: -webkit-sticky;
   position: sticky;
+}
+
+.float-l {
+  float: left;
+}
+
+.float-r {
+  float: right;
+}
+
+.float-n {
+  float: none;
+}
+
+.float-inh {
+  float: inherit;
 }/*# sourceMappingURL=main.css.map */

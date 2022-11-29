@@ -169,6 +169,15 @@ $utilities: (
       "sticky": sticky
     ),
   ),
+  "float": (
+    "prefix": "float",
+    "values": (
+      "l": left,
+      "r": right,
+      "n": none,
+      "inh": inherit
+    ),
+  ),
 );
 
 //generate utility classes
