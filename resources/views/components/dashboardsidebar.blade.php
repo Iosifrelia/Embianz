@@ -3,31 +3,31 @@
     <li class="list bg-hover-sidebar-bg-light-1 p-2 font-lg active">
       <a href="#" class="link">
         <img class="icon p-1 br-sm bg-sidebar-bg-light-1 mr-2" src="/images/chart-bars.svg" alt="icon">
-        <span class="text-sidebar-bg-light-6">Dashboard</span>
+        <span class="text-sidebar-bg-light-6">{{__('Dashboard')}}</span>
       </a>
     </li>
     <li class="list bg-hover-sidebar-bg-light-1 p-2 font-lg">
       <a href="#" class="link">
         <img src="/images/inbox.svg" alt="icon" class="icon p-1 br-sm mr-2 bg-sidebar-bg-light-1">
-        <span class="text-sidebar-bg-light-6">Category</span>
+        <span class="text-sidebar-bg-light-6">{{__('Categories')}}</span>
       </a>
     </li>
     <li class="list bg-hover-sidebar-bg-light-1 p-2 font-lg">
       <a href="#" class="link">
-        <img src="/images/store.svg" alt="" class="icon p-1 br-sm mr-2 bg-sidebar-bg-light-1">
-        <span class="text-sidebar-bg-light-6">Products</span>
+        <img src="/images/store.svg" alt="icon" class="icon p-1 br-sm mr-2 bg-sidebar-bg-light-1">
+        <span class="text-sidebar-bg-light-6">{{__('Products')}}</span>
       </a>
     </li>
     <li class="list bg-hover-sidebar-bg-light-1 p-2 font-lg">
       <a href="#" class="link">
-        <img src="/images/cart.svg" alt="" class="icon p-1 br-sm mr-2 bg-sidebar-bg-light-1">
-        <span class="text-sidebar-bg-light-6">Orders</span>
+        <img src="/images/cart.svg" alt="icon" class="icon p-1 br-sm mr-2 bg-sidebar-bg-light-1">
+        <span class="text-sidebar-bg-light-6">{{__('Orders')}}</span>
       </a>
     </li>
     <li class="list bg-hover-sidebar-bg-light-1 p-2 font-lg">
       <a href="#" class="settings">
-        <img src="/images/cog.svg" alt="" class="icon p-1 br-sm mr-2 bg-sidebar-bg-light-1">
-        <span class="text-sidebar-bg-light-6">Settings</span>
+        <img src="/images/cog.svg" alt="icon" class="icon p-1 br-sm mr-2 bg-sidebar-bg-light-1">
+        <span class="text-sidebar-bg-light-6">{{__('Settings')}}</span>
       </a>
     </li>
   </ul>

@@ -17,12 +17,16 @@
   .container{
     @extend %flex-layout
   }
+  #input_search {
+    @include wh(20rem, auto);
+  }
+
   & .logo{
     display: flex;
     align-items: center;
     
     & img{
-      @include wh(15rem, auto);
+      @include wh(20rem, auto);
       object-fit: cover;
     }
   }
