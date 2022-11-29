@@ -23,6 +23,7 @@ button {
   border: none;
   margin: 0;
   padding: 0;
+  transition: all 0.5s ease-in-out;
 }
 
 .container, .section-container {
