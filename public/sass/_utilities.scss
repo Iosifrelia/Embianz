@@ -159,6 +159,16 @@ $utilities: (
       "xxl": $font-size-xxl
     ),
   ),
+  "position": (
+    "prefix": "pos",
+    "values": (
+      "fix": fixed,
+      "rel": relative,
+      "abs": absolute,
+      "static": static,
+      "sticky": sticky
+    ),
+  ),
 );
 
 //generate utility classes

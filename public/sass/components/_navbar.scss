@@ -10,12 +10,17 @@
   @extend %flex-layout;
   padding: $base-padding $base-padding *2;
   box-shadow: $base-box-shadow;
+  z-index: 1;
+  position: --webkit-sticky;
+  position: sticky;
+  height: 5rem;
 
   .site-title{
     font-size: $font-size-lg;
   }
   .container{
-    @extend %flex-layout
+    @extend %flex-layout;
+    position: fixed;
   }
   #input_search {
     @include wh(20rem, auto);

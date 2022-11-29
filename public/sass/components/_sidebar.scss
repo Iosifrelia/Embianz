@@ -13,6 +13,7 @@
 
 .sidebar {
   @extend %fixed-layout;
+  top: 5rem;
 
   &::-webkit-scrollbar {
     @include w(0);

@@ -25,12 +25,22 @@ button {
   padding: 0;
 }
 
-.container {
+.container, .section-container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2 20px;
   box-sizing: border-box;
+}
+
+.section-container {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 5rem;
+  left: 20rem;
+  max-width: 100%;
+  height: 100%;
 }
 
 .row {
@@ -2719,7 +2729,7 @@ button {
   background-color: white;
 }
 
-.navbar .container, .navbar-white .container, .navbar-black .container, .navbar-gray .container, .navbar-sidebar-bg .container, .navbar-bg .container, .navbar-info .container, .navbar-error .container, .navbar-secondary .container, .navbar-primary .container, .navbar, .navbar-white, .navbar-black, .navbar-gray, .navbar-sidebar-bg, .navbar-bg, .navbar-info, .navbar-error, .navbar-secondary, .navbar-primary {
+.navbar .container, .navbar-white .container, .navbar-black .container, .navbar-gray .container, .navbar-sidebar-bg .container, .navbar-bg .container, .navbar-info .container, .navbar-error .container, .navbar-secondary .container, .navbar-primary .container, .navbar .section-container, .navbar-white .section-container, .navbar-black .section-container, .navbar-gray .section-container, .navbar-sidebar-bg .section-container, .navbar-bg .section-container, .navbar-info .section-container, .navbar-error .section-container, .navbar-secondary .section-container, .navbar-primary .section-container, .navbar, .navbar-white, .navbar-black, .navbar-gray, .navbar-sidebar-bg, .navbar-bg, .navbar-info, .navbar-error, .navbar-secondary, .navbar-primary {
   width: 100%;
   display: flex;
   align-items: center;
@@ -2730,9 +2740,17 @@ button {
 .navbar, .navbar-white, .navbar-black, .navbar-gray, .navbar-sidebar-bg, .navbar-bg, .navbar-info, .navbar-error, .navbar-secondary, .navbar-primary {
   padding: 0.75rem 1.5rem;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  position: --webkit-sticky;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 5rem;
 }
 .navbar .site-title, .navbar-white .site-title, .navbar-black .site-title, .navbar-gray .site-title, .navbar-sidebar-bg .site-title, .navbar-bg .site-title, .navbar-info .site-title, .navbar-error .site-title, .navbar-secondary .site-title, .navbar-primary .site-title {
   font-size: 1.5rem;
+}
+.navbar .container, .navbar-white .container, .navbar-black .container, .navbar-gray .container, .navbar-sidebar-bg .container, .navbar-bg .container, .navbar-info .container, .navbar-error .container, .navbar-secondary .container, .navbar-primary .container, .navbar .section-container, .navbar-white .section-container, .navbar-black .section-container, .navbar-gray .section-container, .navbar-sidebar-bg .section-container, .navbar-bg .section-container, .navbar-info .section-container, .navbar-error .section-container, .navbar-secondary .section-container, .navbar-primary .section-container {
+  position: fixed;
 }
 .navbar #input_search, .navbar-white #input_search, .navbar-black #input_search, .navbar-gray #input_search, .navbar-sidebar-bg #input_search, .navbar-bg #input_search, .navbar-info #input_search, .navbar-error #input_search, .navbar-secondary #input_search, .navbar-primary #input_search {
   width: 20rem;
@@ -2879,6 +2897,9 @@ button {
   box-shadow: 0 0.1rem 1rem rgba(23, 23, 37, 0.8);
 }
 
+.sidebar {
+  top: 5rem;
+}
 .sidebar::-webkit-scrollbar {
   width: 0;
 }
@@ -3270,4 +3291,25 @@ button {
 
 .font-xxl {
   font-size: 3rem;
+}
+
+.pos-fix {
+  position: fixed;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.pos-static {
+  position: static;
+}
+
+.pos-sticky {
+  position: -webkit-sticky;
+  position: sticky;
 }/*# sourceMappingURL=main.css.map */
