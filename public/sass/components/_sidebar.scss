@@ -2,16 +2,7 @@
   filter: drop-shadow(0px 4.0197px 43.1678px rgba(0, 0, 0, 0.28));
 }
 
-@mixin account-bg {
-  background: linear-gradient(
-    230.04deg,
-    #483fdb 2.11%,
-    rgba(46, 46, 72, 0) 102.63
-  );
-  filter: drop-shadow(0rem 0.4rem 3.3rem rgba(0, 0, 0, 0.25));
-}
-
-%fixed-layout{
+%fixed-layout {
   position: fixed;
   left: 0;
   @include wh(20rem, 100%);
@@ -20,56 +11,55 @@
   box-shadow: 0 0.1rem 1rem $sidebar-active-bg;
 }
 
-.sidebar{
+.sidebar {
   @extend %fixed-layout;
-  &::-webkit-scrollbar{
+
+  &::-webkit-scrollbar {
     @include w(0);
   }
 
-  & .menu{
+  & .menu {
 
-    & .list{
+    & .list {
       position: relative;
       transition: $transition;
-      
-     
-      &::before{
+
+      &::before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
         @include wh(0.3rem, 100%);
-        background: $secondary;     
+        background: $secondary;
         border-radius: 0.2rem;
         opacity: 0;
         pointer-events: none;
         transition: $transition;
       }
+
       &:hover::before,
-      &.active::before{
+      &.active::before {
         opacity: 1;
         transition: $transition;
       }
+
       & .link,
-      & .settings{
+      & .settings {
         display: flex;
-        color: map-get($colors, 'white');
         font-size: $font-size-lg;
         font-weight: bold;
         align-items: center;
-        
-
+        gap: 1rem;
       }
-       & .icon{
+
+      & .icon {
         display: flex;
         align-items: center;
-        @include wh(3rem, auto);
+        @include wh(4rem, auto);
         object-fit: cover;
         align-items: center;
-        
-       }
+        box-shadow: 0.2rem 0.1rem 1rem $sidebar-active-bg;
+      }
     }
   }
-  
 }
-
