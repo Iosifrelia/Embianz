@@ -21,7 +21,7 @@ $dodger-blue : #3498db;
 //theme colors///
 
 $primary: #326dee !default;
-$secondary: #1ac888 !default;
+$secondary: hsl(152deg 92% 86%) !default;
 $succes: #1ac888 !default;
 $info: #8f5fe8 !default;
 $error: #d32752 !default;
@@ -30,8 +30,8 @@ $light: $white;
 $dark: #0d0d0d !default;
 
 ///Color variables///
-$bg: #191c24 !default;
-$sidebar-bg: #191c24 !default;
+$bg: #35424b!default;
+$sidebar-bg: #35424b !default;
 $sidebar-active-bg: rgba(23, 23, 37, 0.8) !default;
 $border:#7e73ff !default;
 
