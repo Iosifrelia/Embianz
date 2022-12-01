@@ -8,18 +8,18 @@
 @import './breakpoints';
 @import './grid'; 
 
-
 //colors
 @import './colors';
 
 //components(button, card, navbar)
 @import 'components/card';
 @import 'components/button';
-@import 'components/navbar';
 @import 'components/badge';
-@import 'components/sidebar';
 @import 'components/dropdown';
-
 
 //utilities(margin, padding, opacity)
 @import './utilities';
+
+//layout
+@import 'layout/navbar';
+@import 'layout/sidebar';
