@@ -2745,7 +2745,7 @@ button {
   position: --webkit-sticky;
   position: -webkit-sticky;
   position: sticky;
-  height: 5rem;
+  height: 4.5rem;
 }
 .navbar .site-title, .navbar-white .site-title, .navbar-black .site-title, .navbar-gray .site-title, .navbar-sidebar-bg .site-title, .navbar-bg .site-title, .navbar-info .site-title, .navbar-error .site-title, .navbar-secondary .site-title, .navbar-primary .site-title {
   font-size: 1.3125rem;
@@ -2754,15 +2754,17 @@ button {
   position: fixed;
 }
 .navbar #input_search, .navbar-white #input_search, .navbar-black #input_search, .navbar-gray #input_search, .navbar-sidebar-bg #input_search, .navbar-bg #input_search, .navbar-info #input_search, .navbar-error #input_search, .navbar-secondary #input_search, .navbar-primary #input_search {
-  width: 20rem;
+  width: 30rem;
   height: auto;
+  background-color: #191c24;
+  color: #ffffff;
 }
 .navbar .logo, .navbar-white .logo, .navbar-black .logo, .navbar-gray .logo, .navbar-sidebar-bg .logo, .navbar-bg .logo, .navbar-info .logo, .navbar-error .logo, .navbar-secondary .logo, .navbar-primary .logo {
   display: flex;
   align-items: center;
 }
 .navbar .logo img, .navbar-white .logo img, .navbar-black .logo img, .navbar-gray .logo img, .navbar-sidebar-bg .logo img, .navbar-bg .logo img, .navbar-info .logo img, .navbar-error .logo img, .navbar-secondary .logo img, .navbar-primary .logo img {
-  width: 20rem;
+  width: 15rem;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -2891,7 +2893,7 @@ button {
 .sidebar {
   position: fixed;
   left: 0;
-  width: 20rem;
+  width: 15rem;
   height: 100%;
   overflow-y: scroll;
   background: #191c24;
@@ -2934,8 +2936,9 @@ button {
 .sidebar .menu .list .icon {
   display: flex;
   align-items: center;
-  width: 4rem;
+  width: 2.7rem;
   height: auto;
+  padding: 0.5rem;
   -o-object-fit: cover;
      object-fit: cover;
   align-items: center;

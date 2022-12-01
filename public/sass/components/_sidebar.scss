@@ -5,7 +5,7 @@
 %fixed-layout {
   position: fixed;
   left: 0;
-  @include wh(20rem, 100%);
+  @include wh(15rem, 100%);
   overflow-y: scroll;
   background: $sidebar-bg;
   box-shadow: 0 0.1rem 1rem $sidebar-active-bg;
@@ -56,7 +56,8 @@
       & .icon {
         display: flex;
         align-items: center;
-        @include wh(4rem, auto);
+        @include wh(2.7rem, auto);
+        padding: 0.5rem;
         object-fit: cover;
         align-items: center;
         box-shadow: 0.2rem 0.1rem 1rem $sidebar-active-bg;

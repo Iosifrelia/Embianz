@@ -13,7 +13,7 @@
   z-index: 1;
   position: --webkit-sticky;
   position: sticky;
-  height: 5rem;
+  height: 4.5rem;
 
   .site-title{
     font-size: $font-size-lg;
@@ -23,7 +23,9 @@
     position: fixed;
   }
   #input_search {
-    @include wh(20rem, auto);
+    @include wh(30rem, auto);
+    background-color: $sidebar-bg;
+    color: $white;
   }
 
   & .logo{
@@ -31,7 +33,7 @@
     align-items: center;
     
     & img{
-      @include wh(20rem, auto);
+      @include wh(15rem, auto);
       object-fit: cover;
     }
   }
