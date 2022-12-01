@@ -23,7 +23,7 @@
     position: fixed;
   }
   #input_search {
-    @include wh(30rem, auto);
+    @include wh(40rem, auto);
     background-color: $sidebar-bg;
     color: $white;
   }

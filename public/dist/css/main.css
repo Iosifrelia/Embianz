@@ -38,8 +38,8 @@ button {
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 5rem;
-  left: 20rem;
+  top: 4.5rem;
+  left: 15rem;
   max-width: 100%;
   height: 100%;
 }
@@ -2754,7 +2754,7 @@ button {
   position: fixed;
 }
 .navbar #input_search, .navbar-white #input_search, .navbar-black #input_search, .navbar-gray #input_search, .navbar-sidebar-bg #input_search, .navbar-bg #input_search, .navbar-info #input_search, .navbar-error #input_search, .navbar-secondary #input_search, .navbar-primary #input_search {
-  width: 30rem;
+  width: 40rem;
   height: auto;
   background-color: #191c24;
   color: #ffffff;
@@ -2901,7 +2901,7 @@ button {
 }
 
 .sidebar {
-  top: 5rem;
+  top: 4.5rem;
 }
 .sidebar::-webkit-scrollbar {
   width: 0;
@@ -3359,4 +3359,20 @@ li.dropdown {
 
 .float-inh {
   float: inherit;
+}
+
+.gap-l {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.gap-4 {
+  gap: 4rem;
 }/*# sourceMappingURL=main.css.map */
