@@ -16,8 +16,10 @@
 
             {{--dropdown element // show profile and logout --}}
             <div class="dropdown-content bg-secondary-light-4 font-lg">
-                <a class="p-1" href="{{ route('profile.show') }}">{{__('Profile')}} <img class="float-r" src="/images/dashboard/navbar/user.svg" alt="user_icon"></a>
-                <a class="p-1" href="{{ route('logout') }}">{{__('Logout')}} <img class="float-r" src="/images/dashboard/navbar/exit.svg" alt="user_icon"></a>
+                {{-- <a class="p-1" href="{{ route('profile.show') }}">{{__('Profile')}} <img class="float-r" src="/images/dashboard/navbar/user.svg" alt="user_icon"></a>
+                <a class="p-1" href="{{ route('logout') }}">{{__('Logout')}} <img class="float-r" src="/images/dashboard/navbar/exit.svg" alt="user_icon"></a> --}}
+                <a class="link-responsive p-1" href="{{ route('profile.show') }}"><img  src="/images/dashboard/navbar/user.svg" alt="user_icon"></a>
+                <a class="link-responsive p-1" href="{{ route('logout') }}"><img  src="/images/dashboard/navbar/exit.svg" alt="user_icon"></a>
             </div>
             {{-- end dropdown --}}
             </li>
