@@ -84,6 +84,7 @@ button {
 }
 
 .section-container {
+  width: calc(100% - 15rem);
   padding: 0;
   margin: 0;
   position: absolute;
@@ -91,6 +92,11 @@ button {
   left: 15rem;
   max-width: 100%;
   height: 100%;
+}
+@media (max-width: 628px) {
+  .section-container {
+    left: 4rem;
+  }
 }
 
 .row {
@@ -3315,7 +3321,7 @@ li.dropdown {
   position: fixed;
 }
 .navbar #input_search, .navbar-white #input_search, .navbar-black #input_search, .navbar-gray #input_search, .navbar-sidebar-bg #input_search, .navbar-bg #input_search, .navbar-info #input_search, .navbar-error #input_search, .navbar-secondary #input_search, .navbar-primary #input_search {
-  width: 40rem;
+  width: 30vw;
   height: auto;
   background-color: #35424b;
   background-image: url("/images/dashboard/navbar/magnifier.svg");
@@ -3339,6 +3345,16 @@ li.dropdown {
 .navbar #button_user, .navbar-white #button_user, .navbar-black #button_user, .navbar-gray #button_user, .navbar-sidebar-bg #button_user, .navbar-bg #button_user, .navbar-info #button_user, .navbar-error #button_user, .navbar-secondary #button_user, .navbar-primary #button_user {
   text-align: center;
   justify-content: center;
+}
+.navbar #min_logo, .navbar-white #min_logo, .navbar-black #min_logo, .navbar-gray #min_logo, .navbar-sidebar-bg #min_logo, .navbar-bg #min_logo, .navbar-info #min_logo, .navbar-error #min_logo, .navbar-secondary #min_logo, .navbar-primary #min_logo {
+  display: block;
+  width: 5rem;
+  height: auto;
+}
+@media (max-width: 628px) {
+  .navbar #min_logo, .navbar-white #min_logo, .navbar-black #min_logo, .navbar-gray #min_logo, .navbar-sidebar-bg #min_logo, .navbar-bg #min_logo, .navbar-info #min_logo, .navbar-error #min_logo, .navbar-secondary #min_logo, .navbar-primary #min_logo {
+    display: none;
+  }
 }
 
 .navbar-primary {
@@ -3389,6 +3405,7 @@ li.dropdown {
 
 .sidebar {
   top: 4.5rem;
+  --webkit-transition: width 0.4s ease-in-out;
 }
 .sidebar::-webkit-scrollbar {
   width: 0;
@@ -3430,4 +3447,10 @@ li.dropdown {
      object-fit: cover;
   align-items: center;
   box-shadow: 0.2rem 0.1rem 1rem rgba(23, 23, 37, 0.8);
+}
+@media (max-width: 628px) {
+  .sidebar .sidebar {
+    width: 5rem;
+    overflow-y: hidden;
+  }
 }/*# sourceMappingURL=main.css.map */

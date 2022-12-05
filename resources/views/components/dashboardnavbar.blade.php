@@ -1,6 +1,7 @@
 <nav class="navbar-bg pos-fix">
     <div class="logo">
-        <img src="/images/dashboard/navbar/rectangular_light.png"  alt="">
+        <img src="/images/dashboard/navbar/rectangular_light.png" class="display-n" id="full_logo" alt="icon large">
+        <img src="/images/dashboard/navbar/logoe.png" id="min_logo" alt="icon ">
     </div>
         <div><form action="#" method="post" class="display-f" x-data>
             @csrf

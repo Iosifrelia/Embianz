@@ -20,13 +20,17 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
 
 .section-container{
   @extend .container;
+  @include w(calc(100% - 15rem));
   padding: 0;
   margin: 0;
   position: absolute;
   top: 4.5rem;
   left: 15rem;
   max-width: 100%;
-  height: 100%;
+  height: 100%; 
+  @media (max-width: 628px) {
+    left: 4rem;
+      }
 }
 
 .row {
