@@ -96,6 +96,7 @@ button {
 @media (max-width: 628px) {
   .section-container {
     left: 4rem;
+    width: calc(100% - 4rem);
   }
 }
 
@@ -3309,9 +3310,7 @@ li.dropdown {
   padding: 0.75rem 1.5rem;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
   z-index: 1;
-  position: --webkit-sticky;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   height: 4.5rem;
 }
 .navbar .site-title, .navbar-white .site-title, .navbar-black .site-title, .navbar-gray .site-title, .navbar-sidebar-bg .site-title, .navbar-bg .site-title, .navbar-info .site-title, .navbar-error .site-title, .navbar-secondary .site-title, .navbar-primary .site-title {
@@ -3346,14 +3345,36 @@ li.dropdown {
   text-align: center;
   justify-content: center;
 }
+.navbar #button_user_small, .navbar-white #button_user_small, .navbar-black #button_user_small, .navbar-gray #button_user_small, .navbar-sidebar-bg #button_user_small, .navbar-bg #button_user_small, .navbar-info #button_user_small, .navbar-error #button_user_small, .navbar-secondary #button_user_small, .navbar-primary #button_user_small {
+  display: none;
+  text-align: center;
+  justify-content: center;
+}
 .navbar #min_logo, .navbar-white #min_logo, .navbar-black #min_logo, .navbar-gray #min_logo, .navbar-sidebar-bg #min_logo, .navbar-bg #min_logo, .navbar-info #min_logo, .navbar-error #min_logo, .navbar-secondary #min_logo, .navbar-primary #min_logo {
-  display: block;
-  width: 5rem;
+  display: none;
+  width: 4rem;
   height: auto;
 }
 @media (max-width: 628px) {
+  .navbar, .navbar-white, .navbar-black, .navbar-gray, .navbar-sidebar-bg, .navbar-bg, .navbar-info, .navbar-error, .navbar-secondary, .navbar-primary {
+    padding: 0;
+  }
   .navbar #min_logo, .navbar-white #min_logo, .navbar-black #min_logo, .navbar-gray #min_logo, .navbar-sidebar-bg #min_logo, .navbar-bg #min_logo, .navbar-info #min_logo, .navbar-error #min_logo, .navbar-secondary #min_logo, .navbar-primary #min_logo {
+    display: block;
+  }
+  .navbar #full_logo, .navbar-white #full_logo, .navbar-black #full_logo, .navbar-gray #full_logo, .navbar-sidebar-bg #full_logo, .navbar-bg #full_logo, .navbar-info #full_logo, .navbar-error #full_logo, .navbar-secondary #full_logo, .navbar-primary #full_logo {
     display: none;
+  }
+  .navbar #button_user, .navbar-white #button_user, .navbar-black #button_user, .navbar-gray #button_user, .navbar-sidebar-bg #button_user, .navbar-bg #button_user, .navbar-info #button_user, .navbar-error #button_user, .navbar-secondary #button_user, .navbar-primary #button_user {
+    display: none;
+  }
+  .navbar #button_user_small, .navbar-white #button_user_small, .navbar-black #button_user_small, .navbar-gray #button_user_small, .navbar-sidebar-bg #button_user_small, .navbar-bg #button_user_small, .navbar-info #button_user_small, .navbar-error #button_user_small, .navbar-secondary #button_user_small, .navbar-primary #button_user_small {
+    padding: 0.5rem 1rem;
+    display: block;
+  }
+  .navbar #button_user_small img, .navbar-white #button_user_small img, .navbar-black #button_user_small img, .navbar-gray #button_user_small img, .navbar-sidebar-bg #button_user_small img, .navbar-bg #button_user_small img, .navbar-info #button_user_small img, .navbar-error #button_user_small img, .navbar-secondary #button_user_small img, .navbar-primary #button_user_small img {
+    width: 1rem;
+    height: auto;
   }
 }
 
@@ -3451,6 +3472,7 @@ li.dropdown {
 @media (max-width: 628px) {
   .sidebar .sidebar {
     width: 5rem;
-    overflow-y: hidden;
+    overflow-x: hidden;
+    top: 4rem;
   }
 }/*# sourceMappingURL=main.css.map */

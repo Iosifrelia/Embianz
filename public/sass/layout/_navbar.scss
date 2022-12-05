@@ -11,8 +11,8 @@
   padding: $base-padding $base-padding *2;
   box-shadow: $base-box-shadow;
   z-index: 1;
-  position: --webkit-sticky;
-  position: sticky;
+  
+  position: fixed;
   height: 4.5rem;
 
   .site-title{
@@ -47,14 +47,39 @@
     text-align: center;
     justify-content: center;
   }
+  & #button_user_small{
+    display: none;
+    text-align: center;
+    justify-content: center;
+  }
 
   & #min_logo{
-    display: block;
-    @include wh(5rem, auto);
-    @media (max-width: 628px) {
+    display: none;
+    @include wh(4rem, auto);
+    
+  }
+
+  @media (max-width: 628px){
+    padding: 0;
+    & #min_logo{
+      display: block;
+    }
+
+    & #full_logo{
       display: none;
     }
+    & #button_user{
+      display: none;
+    }
+    & #button_user_small{
+      padding: .5rem 1rem;
+      display: block;
+      img{
+       @include wh(1rem, auto);
+      }
+    }
   }
+
 }
 
 @each $key, $val in $colors {

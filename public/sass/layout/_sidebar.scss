@@ -68,7 +68,8 @@
   @media (max-width: 628px){
     .sidebar{
       @include w(5rem);
-      overflow-y: hidden;
+      overflow-x: hidden;
+      top: 4rem;
     }
   }
 }
