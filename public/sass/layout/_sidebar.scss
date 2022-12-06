@@ -58,7 +58,19 @@
         align-items: center;
         
       }
+      .icon-1{
+        background-image: url('http://localhost:8000/images/dashboard/sidebar/store.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60px 40px;
+        path{
+          fill:red;
+        }
+        
+        @include wh(6rem, 4rem);
+        
 
+      }
       & svg{
         display: flex;
         align-items: center;
@@ -66,7 +78,7 @@
         padding: 0.5rem;
         object-fit: cover;
         align-items: center;
-        box-shadow: 0.2rem 0.1rem 1rem $sidebar-active-bg;
+        //box-shadow: 0.2rem 0.1rem 1rem $sidebar-active-bg;
         path{
           fill: $secondary;
         }

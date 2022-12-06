@@ -3474,6 +3474,17 @@ li.dropdown {
   font-weight: bold;
   align-items: center;
 }
+.sidebar .menu .list .icon-1 {
+  background-image: url("http://localhost:8000/images/dashboard/sidebar/store.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px 40px;
+  width: 6rem;
+  height: 4rem;
+}
+.sidebar .menu .list .icon-1 path {
+  fill: red;
+}
 .sidebar .menu .list svg {
   display: flex;
   align-items: center;
@@ -3483,7 +3494,6 @@ li.dropdown {
   -o-object-fit: cover;
      object-fit: cover;
   align-items: center;
-  box-shadow: 0.2rem 0.1rem 1rem rgba(23, 23, 37, 0.8);
 }
 .sidebar .menu .list svg path {
   fill: hsl(152deg, 92%, 86%);
