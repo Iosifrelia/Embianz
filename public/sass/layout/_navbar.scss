@@ -58,8 +58,11 @@
     @include wh(4rem, auto);
     
   }
+  & .link-responsive{
+    display: none;
+  }
 
-  @media (max-width: 628px){
+  @media (max-width: 662px){
     padding: 0;
     & #min_logo{
       display: block;

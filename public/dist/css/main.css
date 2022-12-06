@@ -5,7 +5,7 @@
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
-  font-family: "Roboto-light", sans-serif;
+  font-family: "Roboto-thin", sans-serif;
 }
 
 html {
@@ -3355,7 +3355,10 @@ li.dropdown {
   width: 4rem;
   height: auto;
 }
-@media (max-width: 628px) {
+.navbar .link-responsive, .navbar-white .link-responsive, .navbar-black .link-responsive, .navbar-gray .link-responsive, .navbar-sidebar-bg .link-responsive, .navbar-bg .link-responsive, .navbar-info .link-responsive, .navbar-error .link-responsive, .navbar-secondary .link-responsive, .navbar-primary .link-responsive {
+  display: none;
+}
+@media (max-width: 662px) {
   .navbar, .navbar-white, .navbar-black, .navbar-gray, .navbar-sidebar-bg, .navbar-bg, .navbar-info, .navbar-error, .navbar-secondary, .navbar-primary {
     padding: 0;
   }
