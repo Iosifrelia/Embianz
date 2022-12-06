@@ -3431,6 +3431,12 @@ li.dropdown {
   top: 4.5rem;
   --webkit-transition: width 0.4s ease-in-out;
 }
+.sidebar img {
+  fill: green !important;
+}
+.sidebar img:hover {
+  fill: green;
+}
 .sidebar::-webkit-scrollbar {
   width: 0;
 }
@@ -3471,6 +3477,7 @@ li.dropdown {
      object-fit: cover;
   align-items: center;
   box-shadow: 0.2rem 0.1rem 1rem rgba(23, 23, 37, 0.8);
+  fill: #fff;
 }
 @media (max-width: 628px) {
   .sidebar .sidebar {
