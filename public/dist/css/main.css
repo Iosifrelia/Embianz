@@ -2873,7 +2873,7 @@ li.dropdown {
 .dropdown-content {
   display: none;
   position: absolute;
-  min-width: 160px;
+  min-width: 10vh;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
@@ -3342,8 +3342,15 @@ li.dropdown {
      object-fit: cover;
 }
 .navbar #button_user, .navbar-white #button_user, .navbar-black #button_user, .navbar-gray #button_user, .navbar-sidebar-bg #button_user, .navbar-bg #button_user, .navbar-info #button_user, .navbar-error #button_user, .navbar-secondary #button_user, .navbar-primary #button_user {
-  text-align: center;
-  justify-content: center;
+  padding: 0.5rem;
+}
+.navbar #button_user img, .navbar-white #button_user img, .navbar-black #button_user img, .navbar-gray #button_user img, .navbar-sidebar-bg #button_user img, .navbar-bg #button_user img, .navbar-info #button_user img, .navbar-error #button_user img, .navbar-secondary #button_user img, .navbar-primary #button_user img {
+  width: 0.8rem;
+  height: auto;
+}
+.navbar .dropdown-content img, .navbar-white .dropdown-content img, .navbar-black .dropdown-content img, .navbar-gray .dropdown-content img, .navbar-sidebar-bg .dropdown-content img, .navbar-bg .dropdown-content img, .navbar-info .dropdown-content img, .navbar-error .dropdown-content img, .navbar-secondary .dropdown-content img, .navbar-primary .dropdown-content img {
+  width: 0.8rem;
+  height: auto;
 }
 .navbar #button_user_small, .navbar-white #button_user_small, .navbar-black #button_user_small, .navbar-gray #button_user_small, .navbar-sidebar-bg #button_user_small, .navbar-bg #button_user_small, .navbar-info #button_user_small, .navbar-error #button_user_small, .navbar-secondary #button_user_small, .navbar-primary #button_user_small {
   display: none;
@@ -3467,7 +3474,7 @@ li.dropdown {
   font-weight: bold;
   align-items: center;
 }
-.sidebar .menu .list .icon {
+.sidebar .menu .list svg {
   display: flex;
   align-items: center;
   width: 2.7rem;
@@ -3477,7 +3484,9 @@ li.dropdown {
      object-fit: cover;
   align-items: center;
   box-shadow: 0.2rem 0.1rem 1rem rgba(23, 23, 37, 0.8);
-  fill: #fff;
+}
+.sidebar .menu .list svg path {
+  fill: hsl(152deg, 92%, 86%);
 }
 @media (max-width: 628px) {
   .sidebar .sidebar {

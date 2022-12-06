@@ -44,8 +44,15 @@
     }
   }
   & #button_user{
-    text-align: center;
-    justify-content: center;
+    padding: 0.5rem;
+    img{
+      @include wh(.8rem,auto); 
+    }
+  }
+  .dropdown-content{
+    img{
+      @include wh(.8rem,auto);
+    }
   }
   & #button_user_small{
     display: none;

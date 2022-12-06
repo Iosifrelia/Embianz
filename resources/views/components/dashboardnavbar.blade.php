@@ -11,15 +11,13 @@
         </div>
         <ul class="dropdown">
             <li class="ml-1 mr-2">
-                <button id="button_user" class="btn-secondary font-sm pb-1 pl-2 pt-1 br-xs o-80">{{$user}}<img src="/images/dashboard/navbar/chevron-down.svg" alt="icon" class="ml-1"></button>
+                <button id="button_user" class="btn-secondary font-md pb-1 pl-2 br-xs">{{$user}}<img src="/images/dashboard/navbar/chevron-down.svg" alt="icon" class="ml-1"></button>
                 <button id="button_user_small" class="btn-secondary font-lg  br-xs o-80"><img src="/images/dashboard/navbar/chevron-down.svg" alt="icon"></button>
 
             {{--dropdown element // show profile and logout --}}
-            <div class="dropdown-content bg-secondary-light-4 font-lg">
-                <a class="p-1" href="{{ route('profile.show') }}">{{__('Profile')}} <img class="float-r" src="/images/dashboard/navbar/user.svg" alt="user_icon"></a>
-                <a class="p-1" href="{{ route('logout') }}">{{__('Logout')}} <img class="float-r" src="/images/dashboard/navbar/exit.svg" alt="user_icon"></a>
-                <a class="link-responsive p-1" href="{{ route('profile.show') }}"><img  src="/images/dashboard/navbar/user.svg" alt="user_icon"></a>
-                <a class="link-responsive p-1" href="{{ route('logout') }}"><img  src="/images/dashboard/navbar/exit.svg" alt="user_icon"></a>
+            <div class="dropdown-content text-white bg-sidebar-bg-light-5 font-lg">
+                <a class="p-1 font-md" href="{{ route('profile.show') }}">{{__('Profile')}} <img class="float-r" src="/images/dashboard/navbar/user.svg" alt="user_icon"></a>
+                <a class="p-1 font-md" href="{{ route('logout') }}">{{__('Logout')}} <img class="float-r" src="/images/dashboard/navbar/exit.svg" alt="user_icon"></a>
             </div>
             {{-- end dropdown --}}
             </li>

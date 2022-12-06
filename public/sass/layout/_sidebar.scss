@@ -59,7 +59,7 @@
         
       }
 
-      & .icon {
+      & svg{
         display: flex;
         align-items: center;
         @include wh(2.7rem, auto);
@@ -67,7 +67,10 @@
         object-fit: cover;
         align-items: center;
         box-shadow: 0.2rem 0.1rem 1rem $sidebar-active-bg;
-       fill: #fff;
+        path{
+          fill: $secondary;
+        }
+       
       }
     }
   }
