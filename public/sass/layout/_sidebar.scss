@@ -15,9 +15,7 @@
   @extend %fixed-layout;
   top: 4.5rem;
   --webkit-transition: width 0.4s ease-in-out;
- 
-  
-  
+
   &::-webkit-scrollbar {
     @include w(0);
   }
@@ -51,24 +49,12 @@
       & .settings {
         display: flex;
         font-size: $base-font-size;
-        font-family:'Roboto-light', sans-serif !important;
+        font-family: 'Roboto-light', sans-serif !important;
         align-items: center;
-        
-      }
-      .icon-1{
-        background-image: url('http://localhost:8000/images/dashboard/sidebar/store.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 60px 40px;
-        path{
-          fill:red;
-        }
-        
-        @include wh(6rem, 4rem);
-        
 
       }
-      & svg{
+
+      & svg {
         display: flex;
         align-items: center;
         @include wh(2.7rem, auto);
@@ -76,15 +62,15 @@
         object-fit: cover;
         align-items: center;
         //box-shadow: 0.2rem 0.1rem 1rem $sidebar-active-bg;
-        path{
+        path {
           fill: $secondary;
         }
-       
       }
     }
   }
-  @media (max-width: 628px){
-    .sidebar{
+
+  @media (max-width: 628px) {
+    .sidebar {
       @include w(5rem);
       overflow-x: hidden;
       top: 4rem;

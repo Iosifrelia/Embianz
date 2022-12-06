@@ -2901,29 +2901,6 @@ li.dropdown {
   display: block;
 }
 
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .p-0 {
   padding: 0;
 }
@@ -3590,17 +3567,6 @@ li.dropdown {
   font-size: 0.875rem;
   font-family: "Roboto-light", sans-serif !important;
   align-items: center;
-}
-.sidebar .menu .list .icon-1 {
-  background-image: url("http://localhost:8000/images/dashboard/sidebar/store.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 60px 40px;
-  width: 6rem;
-  height: 4rem;
-}
-.sidebar .menu .list .icon-1 path {
-  fill: red;
 }
 .sidebar .menu .list svg {
   display: flex;
