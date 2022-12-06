@@ -5,11 +5,19 @@
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
+ 
+}
+input{
+font-family:'Roboto-thin', sans-serif;
+}
+body{
   font-family:'Roboto-thin', sans-serif;
+  font-weight: normal;
 }
 
 html{
   scroll-behavior: smooth;
+  
 }
 
 img{

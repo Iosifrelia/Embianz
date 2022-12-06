@@ -15,12 +15,9 @@
   @extend %fixed-layout;
   top: 4.5rem;
   --webkit-transition: width 0.4s ease-in-out;
-  img{
-    fill: green !important;
-    &:hover{
-      fill: green;
-    }
-  }
+ 
+  
+  
   &::-webkit-scrollbar {
     @include w(0);
   }
@@ -54,7 +51,7 @@
       & .settings {
         display: flex;
         font-size: $base-font-size;
-        font-weight: bold;
+        font-family:'Roboto-light', sans-serif !important;
         align-items: center;
         
       }

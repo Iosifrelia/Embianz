@@ -25,14 +25,22 @@
   #input_search {
     @include wh(30vw, auto);
     background-color: $sidebar-bg;
-    background-image: url('/images/dashboard/navbar/magnifier.svg');
+    background-image: url(/images/dashboard/navbar/magnifier.svg);
+    
+    &::placeholder{
+      color: $secondary;
+      opacity: 1;
+    }
+    
     background-position: 10px 10px;
     background-repeat: no-repeat;
     transition: $transition;
     -webkit-transition: width 0.4s ease-in-out;
     color: $secondary;
     border: 1px solid $secondary;
+    
   }
+  
 
   & .logo{
     display: flex;

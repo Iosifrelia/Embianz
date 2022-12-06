@@ -5,7 +5,15 @@
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
+}
+
+input {
   font-family: "Roboto-thin", sans-serif;
+}
+
+body {
+  font-family: "Roboto-thin", sans-serif;
+  font-weight: normal;
 }
 
 html {
@@ -2893,6 +2901,29 @@ li.dropdown {
   display: block;
 }
 
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .p-0 {
   padding: 0;
 }
@@ -3177,6 +3208,50 @@ li.dropdown {
   opacity: 1;
 }
 
+.ls-0 {
+  letter-spacing: 0;
+}
+
+.ls-1 {
+  letter-spacing: 1px;
+}
+
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+.ls-3 {
+  letter-spacing: 3px;
+}
+
+.ls-4 {
+  letter-spacing: 4px;
+}
+
+.ls-5 {
+  letter-spacing: 5px;
+}
+
+.ls-6 {
+  letter-spacing: 6px;
+}
+
+.ls-7 {
+  letter-spacing: 7px;
+}
+
+.ls-8 {
+  letter-spacing: 8px;
+}
+
+.ls-9 {
+  letter-spacing: 9px;
+}
+
+.ls-10 {
+  letter-spacing: 10px;
+}
+
 .br {
   border-radius: 20px;
 }
@@ -3243,6 +3318,42 @@ li.dropdown {
 
 .font-xxl {
   font-size: 2.625rem;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
 }
 
 .pos-fix {
@@ -3323,13 +3434,25 @@ li.dropdown {
   width: 30vw;
   height: auto;
   background-color: #35424b;
-  background-image: url("/images/dashboard/navbar/magnifier.svg");
+  background-image: url(/images/dashboard/navbar/magnifier.svg);
   background-position: 10px 10px;
   background-repeat: no-repeat;
   transition: all 0.5s ease-in-out;
   -webkit-transition: width 0.4s ease-in-out;
   color: hsl(152deg, 92%, 86%);
   border: 1px solid hsl(152deg, 92%, 86%);
+}
+.navbar #input_search::-moz-placeholder, .navbar-white #input_search::-moz-placeholder, .navbar-black #input_search::-moz-placeholder, .navbar-gray #input_search::-moz-placeholder, .navbar-sidebar-bg #input_search::-moz-placeholder, .navbar-bg #input_search::-moz-placeholder, .navbar-info #input_search::-moz-placeholder, .navbar-error #input_search::-moz-placeholder, .navbar-secondary #input_search::-moz-placeholder, .navbar-primary #input_search::-moz-placeholder {
+  color: hsl(152deg, 92%, 86%);
+  opacity: 1;
+}
+.navbar #input_search:-ms-input-placeholder, .navbar-white #input_search:-ms-input-placeholder, .navbar-black #input_search:-ms-input-placeholder, .navbar-gray #input_search:-ms-input-placeholder, .navbar-sidebar-bg #input_search:-ms-input-placeholder, .navbar-bg #input_search:-ms-input-placeholder, .navbar-info #input_search:-ms-input-placeholder, .navbar-error #input_search:-ms-input-placeholder, .navbar-secondary #input_search:-ms-input-placeholder, .navbar-primary #input_search:-ms-input-placeholder {
+  color: hsl(152deg, 92%, 86%);
+  opacity: 1;
+}
+.navbar #input_search::placeholder, .navbar-white #input_search::placeholder, .navbar-black #input_search::placeholder, .navbar-gray #input_search::placeholder, .navbar-sidebar-bg #input_search::placeholder, .navbar-bg #input_search::placeholder, .navbar-info #input_search::placeholder, .navbar-error #input_search::placeholder, .navbar-secondary #input_search::placeholder, .navbar-primary #input_search::placeholder {
+  color: hsl(152deg, 92%, 86%);
+  opacity: 1;
 }
 .navbar .logo, .navbar-white .logo, .navbar-black .logo, .navbar-gray .logo, .navbar-sidebar-bg .logo, .navbar-bg .logo, .navbar-info .logo, .navbar-error .logo, .navbar-secondary .logo, .navbar-primary .logo {
   display: flex;
@@ -3438,12 +3561,6 @@ li.dropdown {
   top: 4.5rem;
   --webkit-transition: width 0.4s ease-in-out;
 }
-.sidebar img {
-  fill: green !important;
-}
-.sidebar img:hover {
-  fill: green;
-}
 .sidebar::-webkit-scrollbar {
   width: 0;
 }
@@ -3471,7 +3588,7 @@ li.dropdown {
 .sidebar .menu .list .link, .sidebar .menu .list .settings {
   display: flex;
   font-size: 0.875rem;
-  font-weight: bold;
+  font-family: "Roboto-light", sans-serif !important;
   align-items: center;
 }
 .sidebar .menu .list .icon-1 {
