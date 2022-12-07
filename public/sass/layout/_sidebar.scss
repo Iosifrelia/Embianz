@@ -14,11 +14,14 @@
 .sidebar {
   @extend %fixed-layout;
   top: 4.5rem;
+  z-index: 1;
+  overflow-x: hidden;
   --webkit-transition: width 0.4s ease-in-out;
 
   &::-webkit-scrollbar {
     @include w(0);
   }
+
 
   & .menu {
 
@@ -46,17 +49,33 @@
       }
 
       & .link,
-      & .settings {
+      & .settings,
+      & .dropdown-btn {
         display: flex;
         font-size: $base-font-size;
         font-family: 'Roboto-light', sans-serif !important;
         align-items: center;
+        
 
       }
 
+      .dropdown-container {
+       @extend .dropdown-content;
+       position: relative;
+       box-shadow: none;
+       left: 2rem;
+      & a{
+        box-shadow: none;
+        &:hover{
+          color: $secondary;
+        }
+       }
+      }
+     
+
       & svg {
         display: flex;
-        align-items: center;
+        
         @include wh(2.7rem, auto);
         padding: 0.5rem;
         object-fit: cover;

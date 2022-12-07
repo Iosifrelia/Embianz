@@ -15,9 +15,9 @@ li.dropdown {
   display: block;
   text-align: left;
   box-shadow: $base-box-shadow;
+ 
 }
 
-.dropdown-content a:hover {background-color: $secondary;}
 
 .dropdown:hover .dropdown-content {
   display: block;

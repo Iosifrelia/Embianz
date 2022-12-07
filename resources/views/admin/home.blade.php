@@ -9,4 +9,5 @@
 </div>
 </section>
 {{-- page content end --}}
+<x-dashboardscript />
 <x-dashboardfooter />
