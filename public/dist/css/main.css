@@ -3546,6 +3546,11 @@ li.dropdown {
   box-shadow: 0 0.1rem 1rem rgba(23, 23, 37, 0.8);
 }
 
+.active {
+  color: hsl(152deg, 92%, 86%);
+  background: #35424b;
+}
+
 .sidebar {
   top: 4.5rem;
   overflow-x: hidden;

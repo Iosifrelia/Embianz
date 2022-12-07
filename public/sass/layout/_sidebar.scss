@@ -11,6 +11,11 @@
   box-shadow: 0 0.1rem 1rem $sidebar-active-bg;
 }
 
+.active{
+  color: $secondary;
+  background: $sidebar-bg;
+}
+
 .sidebar {
   @extend %fixed-layout;
   top: 4.5rem;

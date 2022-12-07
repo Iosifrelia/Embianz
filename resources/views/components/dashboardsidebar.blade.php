@@ -40,9 +40,8 @@
       </a>
       <div class="dropdown-container ml-1 text-white">
         <a class="pt-1 pr-2 pb-1 font-md" href="#">Add new Product</a>
-        <a class="pt-1 pr-2 pb-1 font-md" href="#">Delete Products</a>
         <a class="pt-1 pr-2 pb-1 font-md" href="#">Show all Products</a>
-        <a class="pt-1 pr-2 pb-1 font-md" href="#">Edit Products</a>
+       
         
       </div>
     </li>
