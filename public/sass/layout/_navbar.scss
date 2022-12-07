@@ -37,6 +37,7 @@
     transition: $transition;
     -webkit-transition: width 0.4s ease-in-out;
     color: $secondary;
+    //align-items: center;
     border: 1px solid $secondary;
     
   }
@@ -81,6 +82,9 @@
     padding: 0;
     & #min_logo{
       display: block;
+    }
+    #input_search{
+     @include wh(50vw, auto);
     }
 
     & #full_logo{

@@ -38,7 +38,7 @@
       }
       .bg-hover-#{$key}-light-#{$i} {
         &:hover{
-          background-color: mix(white, $val, $i * 10);
+          background-color: mix(white, $val, $i * 2.5);
         }
       }
     }
