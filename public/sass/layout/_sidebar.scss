@@ -93,10 +93,10 @@
     }
   }
 
-  @media (max-width: 628px) {
+  @media (max-width: 662px) {
     .sidebar {
       @include w(5rem);
-      //overflow-x: hidden;
+      overflow-x: hidden;
       top: 4rem;
     }
   }

@@ -15,6 +15,15 @@
   position: fixed;
   height: 4.5rem;
 
+  .small{
+    display: none;
+    @media (max-width: 662px){
+      display: block;
+      margin-right: 1rem;
+    }
+
+  }
+
   .site-title{
     font-size: $font-size-lg;
   }
