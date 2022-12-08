@@ -3553,7 +3553,6 @@ li.dropdown {
 
 .sidebar {
   top: 4.5rem;
-  overflow-x: hidden;
   --webkit-transition: width 0.4s ease-in-out;
 }
 .sidebar::-webkit-scrollbar {
@@ -3588,10 +3587,6 @@ li.dropdown {
   align-items: center;
   width: 100%;
 }
-.sidebar .menu .list .link i:before, .sidebar .menu .list .settings i:before, .sidebar .menu .list .dropdown-btn i:before {
-  font-size: inherit;
-  color: inherit;
-}
 .sidebar .menu .list .dropdown-container {
   position: relative;
   box-shadow: none;
@@ -3620,7 +3615,6 @@ li.dropdown {
 @media (max-width: 628px) {
   .sidebar .sidebar {
     width: 5rem;
-    overflow-x: hidden;
     top: 4rem;
   }
 }/*# sourceMappingURL=main.css.map */
