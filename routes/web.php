@@ -24,4 +24,4 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
     route::get('/category', [AdminController::class, 'category'])->name('category');
     
 });
-route::get('/redirect', [HomeController::class, 'redirect']);
+route::get('/redirect', [HomeController::class, 'redirect'])->middleware('auth','verified')->name('redirect');
