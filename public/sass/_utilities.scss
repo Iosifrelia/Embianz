@@ -220,6 +220,29 @@ $utilities: (
       "4": 4rem
     ),
   ),
+  "align-items": (
+    "prefix": "align",
+    "values": (
+      "stretch": stretch,
+      "center": center,
+      "left": flex-start,
+      "right": flex-end,
+      "baseline": baseline,
+      "initial": initial,
+      "inherit": inherit
+    ),
+  ),
+  "text-align": (
+    "prefix": "talign",
+    "values": (
+      "l": left,
+      "r": right,
+      "c": center,
+      "j": justify,
+      "i": initial,
+      "in": inherit,
+    ),
+  ),
 );
 
 //generate utility classes

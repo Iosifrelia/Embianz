@@ -16,10 +16,16 @@
         });
     }
 
-     var modal = document.getElementById("modal-user");
+     var modaluser = document.getElementById("modal-user");
     window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
+            if (event.target == modaluser) {
+                modaluser.style.display = "none";
+            }
+          }
+          var modalcategory = document.getElementById("modal-category");
+    window.onclick = function(event) {
+            if (event.target == modalcategory) {
+                modalcategory.style.display = "none";
             }
           }
 </script>

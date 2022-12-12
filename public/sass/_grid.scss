@@ -29,7 +29,7 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
   left: 15rem;
   max-width: 100%;
   height: 100%; 
-  @media (max-width: 628px) {
+  @media (max-width: 662px) {
     left: 4.5rem;
     z-index: -1;
     @include w(calc(100% - 4rem));
