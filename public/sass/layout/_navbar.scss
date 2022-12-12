@@ -34,10 +34,9 @@
 
     .content-user{
       @extend .content;
-      width: 40%;
+      width: 95%;
+      height: 79%;
       
-      
-
       .exit{
         @include wh(3rem, auto);
         cursor: pointer;
@@ -90,11 +89,7 @@
       @include wh(.8rem,auto); 
     }
   }
-  .dropdown-content{
-    img{
-      @include wh(.8rem,auto);
-    }
-  }
+
   & #button_user_small{
     display: none;
     text-align: center;

@@ -93,6 +93,7 @@ button {
 
 .section-container {
   width: calc(100% - 15rem);
+  height: auto;
   padding: 0;
   margin: 0;
   position: absolute;
@@ -103,7 +104,8 @@ button {
 }
 @media (max-width: 628px) {
   .section-container {
-    left: 4rem;
+    left: 4.5rem;
+    z-index: -1;
     width: calc(100% - 4rem);
   }
 }
@@ -3448,7 +3450,8 @@ li.dropdown {
   }
 }
 .navbar .modal-user .content-user, .navbar-white .modal-user .content-user, .navbar-black .modal-user .content-user, .navbar-gray .modal-user .content-user, .navbar-sidebar-bg .modal-user .content-user, .navbar-bg .modal-user .content-user, .navbar-info .modal-user .content-user, .navbar-error .modal-user .content-user, .navbar-secondary .modal-user .content-user, .navbar-primary .modal-user .content-user {
-  width: 40%;
+  width: 95%;
+  height: 79%;
 }
 .navbar .modal-user .content-user .exit, .navbar-white .modal-user .content-user .exit, .navbar-black .modal-user .content-user .exit, .navbar-gray .modal-user .content-user .exit, .navbar-sidebar-bg .modal-user .content-user .exit, .navbar-bg .modal-user .content-user .exit, .navbar-info .modal-user .content-user .exit, .navbar-error .modal-user .content-user .exit, .navbar-secondary .modal-user .content-user .exit, .navbar-primary .modal-user .content-user .exit {
   width: 3rem;
@@ -3501,10 +3504,6 @@ li.dropdown {
   padding: 0.5rem;
 }
 .navbar #button_user img, .navbar-white #button_user img, .navbar-black #button_user img, .navbar-gray #button_user img, .navbar-sidebar-bg #button_user img, .navbar-bg #button_user img, .navbar-info #button_user img, .navbar-error #button_user img, .navbar-secondary #button_user img, .navbar-primary #button_user img {
-  width: 0.8rem;
-  height: auto;
-}
-.navbar .dropdown-content img, .navbar .sidebar .menu .list .dropdown-container img, .sidebar .menu .list .navbar .dropdown-container img, .navbar-white .dropdown-content img, .navbar-white .sidebar .menu .list .dropdown-container img, .sidebar .menu .list .navbar-white .dropdown-container img, .navbar-black .dropdown-content img, .navbar-black .sidebar .menu .list .dropdown-container img, .sidebar .menu .list .navbar-black .dropdown-container img, .navbar-gray .dropdown-content img, .navbar-gray .sidebar .menu .list .dropdown-container img, .sidebar .menu .list .navbar-gray .dropdown-container img, .navbar-sidebar-bg .dropdown-content img, .navbar-sidebar-bg .sidebar .menu .list .dropdown-container img, .sidebar .menu .list .navbar-sidebar-bg .dropdown-container img, .navbar-bg .dropdown-content img, .navbar-bg .sidebar .menu .list .dropdown-container img, .sidebar .menu .list .navbar-bg .dropdown-container img, .navbar-info .dropdown-content img, .navbar-info .sidebar .menu .list .dropdown-container img, .sidebar .menu .list .navbar-info .dropdown-container img, .navbar-error .dropdown-content img, .navbar-error .sidebar .menu .list .dropdown-container img, .sidebar .menu .list .navbar-error .dropdown-container img, .navbar-secondary .dropdown-content img, .navbar-secondary .sidebar .menu .list .dropdown-container img, .sidebar .menu .list .navbar-secondary .dropdown-container img, .navbar-primary .dropdown-content img, .navbar-primary .sidebar .menu .list .dropdown-container img, .sidebar .menu .list .navbar-primary .dropdown-container img {
   width: 0.8rem;
   height: auto;
 }
@@ -3585,7 +3584,7 @@ li.dropdown {
 }
 
 .sidebar {
-  position: fixed;
+  position: absolute;
   left: 0;
   width: 15rem;
   height: 100%;
@@ -3600,6 +3599,7 @@ li.dropdown {
 }
 
 .sidebar {
+  overflow: scroll;
   top: 4.5rem;
   --webkit-transition: width 0.4s ease-in-out;
 }
@@ -3640,6 +3640,12 @@ li.dropdown {
   box-shadow: none;
   transition: all 0.5s ease-in-out;
 }
+@media (max-width: 662px) {
+  .sidebar .menu .list .dropdown-container {
+    z-index: 1;
+    padding-top: 0.75rem;
+  }
+}
 .sidebar .menu .list .dropdown-container a {
   box-shadow: none;
   text-align: right;
@@ -3661,9 +3667,12 @@ li.dropdown {
   fill: hsl(152deg, 92%, 86%);
 }
 @media (max-width: 662px) {
-  .sidebar .sidebar {
-    width: 5rem;
+  .sidebar {
+    width: 4.5rem;
     overflow-x: hidden;
     top: 4rem;
+  }
+  .sidebar span {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
