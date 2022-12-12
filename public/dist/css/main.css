@@ -2897,26 +2897,18 @@ li.dropdown {
   display: block;
 }
 
-.modal {
+.modal, .navbar .modal-user, .navbar-white .modal-user, .navbar-black .modal-user, .navbar-gray .modal-user, .navbar-sidebar-bg .modal-user, .navbar-bg .modal-user, .navbar-info .modal-user, .navbar-error .modal-user, .navbar-secondary .modal-user, .navbar-primary .modal-user {
   z-index: 3;
   display: none;
-  padding-top: 100px;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  height: auto;
   height: 100vh;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
 }
-@media (max-width: 662px) {
-  .modal {
-    padding-top: 4.5rem;
-  }
-}
-.modal .content {
+.modal .content, .navbar .modal-user .content, .navbar-white .modal-user .content, .navbar-black .modal-user .content, .navbar-gray .modal-user .content, .navbar-sidebar-bg .modal-user .content, .navbar-bg .modal-user .content, .navbar-info .modal-user .content, .navbar-error .modal-user .content, .navbar-secondary .modal-user .content, .navbar-primary .modal-user .content, .navbar .modal-user .content-user, .navbar-white .modal-user .content-user, .navbar-black .modal-user .content-user, .navbar-gray .modal-user .content-user, .navbar-sidebar-bg .modal-user .content-user, .navbar-bg .modal-user .content-user, .navbar-info .modal-user .content-user, .navbar-error .modal-user .content-user, .navbar-secondary .modal-user .content-user, .navbar-primary .modal-user .content-user {
   margin: auto;
   background-color: #fff;
   opacity: 90%;
@@ -2927,12 +2919,6 @@ li.dropdown {
   outline: 0;
   width: 600px;
   text-align: center;
-}
-@media (max-width: 662px) {
-  .modal .content {
-    margin: 0 10px;
-    width: auto !important;
-  }
 }
 
 .p-0 {
@@ -3455,6 +3441,21 @@ li.dropdown {
     display: block;
     margin-right: 1rem;
   }
+}
+@media (max-width: 662px) {
+  .navbar .modal-user, .navbar-white .modal-user, .navbar-black .modal-user, .navbar-gray .modal-user, .navbar-sidebar-bg .modal-user, .navbar-bg .modal-user, .navbar-info .modal-user, .navbar-error .modal-user, .navbar-secondary .modal-user, .navbar-primary .modal-user {
+    padding-top: 4.5rem;
+  }
+}
+.navbar .modal-user .content-user, .navbar-white .modal-user .content-user, .navbar-black .modal-user .content-user, .navbar-gray .modal-user .content-user, .navbar-sidebar-bg .modal-user .content-user, .navbar-bg .modal-user .content-user, .navbar-info .modal-user .content-user, .navbar-error .modal-user .content-user, .navbar-secondary .modal-user .content-user, .navbar-primary .modal-user .content-user {
+  width: 40%;
+}
+.navbar .modal-user .content-user .exit, .navbar-white .modal-user .content-user .exit, .navbar-black .modal-user .content-user .exit, .navbar-gray .modal-user .content-user .exit, .navbar-sidebar-bg .modal-user .content-user .exit, .navbar-bg .modal-user .content-user .exit, .navbar-info .modal-user .content-user .exit, .navbar-error .modal-user .content-user .exit, .navbar-secondary .modal-user .content-user .exit, .navbar-primary .modal-user .content-user .exit {
+  width: 3rem;
+  height: auto;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: bold;
 }
 .navbar .site-title, .navbar-white .site-title, .navbar-black .site-title, .navbar-gray .site-title, .navbar-sidebar-bg .site-title, .navbar-bg .site-title, .navbar-info .site-title, .navbar-error .site-title, .navbar-secondary .site-title, .navbar-primary .site-title {
   font-size: 1.3125rem;

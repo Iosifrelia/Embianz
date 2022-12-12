@@ -24,6 +24,29 @@
 
   }
 
+  .modal-user{
+    @extend .modal;
+
+    
+  @media (max-width: 662px){
+    padding-top: 4.5rem;
+  }
+
+    .content-user{
+      @extend .content;
+      width: 40%;
+      
+      
+
+      .exit{
+        @include wh(3rem, auto);
+        cursor: pointer;
+        font-size: 28px;
+        font-weight: bold;
+      }
+    }
+  }
+
   .site-title{
     font-size: $font-size-lg;
   }

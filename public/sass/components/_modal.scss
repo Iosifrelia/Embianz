@@ -1,19 +1,12 @@
 .modal{
   z-index: 3;
   display: none;
-  padding-top: 100px;
   position: fixed;
   left: 0;
   top: 0;
-  @include wh(100%, auto);
-  height: 100vh;
+  @include wh(100%, 100vh);
   overflow: auto;
-  background-color:rgb(0,0,0);
-  background-color:rgba(0,0,0,0.4);
-
-  @media (max-width: 662px){
-    padding-top: 4.5rem;
-  }
+  background-color:rgba(0,0,0,0.6);
 
   .content{
     margin: auto;
@@ -27,10 +20,11 @@
     width: 600px;
     text-align: center;
 
-    @media (max-width: 662px){
-      margin: 0 10px;
-      width: auto!important
-    }
+
+    // @media (max-width: 662px){
+    //   margin: 0 10px;
+    //   width: auto!important;
+    // }
   }
 
 }
