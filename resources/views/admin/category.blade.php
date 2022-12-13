@@ -1,6 +1,7 @@
 <x-dashboardheader />
 <x-dashboardnavbar />
 <x-dashboardsidebar />
+<x-dashboardmodals />
 {{-- Page content start --}}
 <section class="section-container bg-sidebar-bg-light-1">
 <h1 id="title" class="mt-4 talign-c font-xl ls-1 text-secondary">{{__('Categories')}}</h1>
@@ -15,7 +16,7 @@
   </div>
 </div>
 {{-- New Category modal --}}
-  <div id="modal-category" class="modal">
+  {{-- <div id="modal-category" class="modal">
     <div class="content-category o-50">
       <div>
         <span onclick="document.getElementById('modal-category').style.display='none'" class="exit text-hover-secondary float-r">&times;</span>
@@ -35,7 +36,7 @@
         </ul>
       </div>
     </div>
-  </div>
+  </div> --}}
   {{-- Modal end --}}
 </section>
 {{-- page content end --}}

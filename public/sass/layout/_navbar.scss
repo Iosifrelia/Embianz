@@ -6,6 +6,29 @@
   box-sizing: border-box;
 }
 
+.modal-user{
+  @extend .modal;
+
+  
+@media (max-width: 662px){
+  padding-top: 4rem;
+}
+
+  .content-user{
+    @extend .content;
+    width: 90%;
+    height: 80%;
+    
+    .exit{
+      @include wh(3rem, auto);
+      cursor: pointer;
+      font-size: 28px;
+      font-weight: bold;
+      color: $secondary;
+    }
+  }
+}
+
 .navbar{
   @extend %flex-layout;
   padding: $base-padding $base-padding *2;
@@ -24,28 +47,7 @@
 
   }
 
-  .modal-user{
-    @extend .modal;
-
-    
-  @media (max-width: 662px){
-    padding-top: 4rem;
-  }
-
-    .content-user{
-      @extend .content;
-      width: 90%;
-      height: 80%;
-      
-      .exit{
-        @include wh(3rem, auto);
-        cursor: pointer;
-        font-size: 28px;
-        font-weight: bold;
-        color: $secondary;
-      }
-    }
-  }
+  
 
   .site-title{
     font-size: $font-size-lg;
@@ -108,6 +110,7 @@
 
   @media (max-width: 662px){
     padding: 0;
+    //z-index: -1;
     & #min_logo{
       display: block;
     }
@@ -122,10 +125,15 @@
       display: none;
     }
     & #button_user_small{
-      padding: .5rem 1rem;
+      padding: $base-padding;
+      margin-right: 1rem;
       display: block;
-      img{
+      
        @include wh(1rem, auto);
+      
+      &:hover{
+        background: $bg;
+        @include wh(1.5rem, auto);
       }
     }
   }
