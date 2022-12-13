@@ -7,8 +7,6 @@
 
         <title>{{ __('Embianz-project') }}</title>
 
-        <!-- Fonts -->
-
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -18,3 +16,4 @@
         
     </head>
     <body>
+    @include('sweetalert::alert')
