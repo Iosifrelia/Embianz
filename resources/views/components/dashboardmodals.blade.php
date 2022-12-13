@@ -19,7 +19,7 @@
         <span onclick="document.getElementById('modal-category').style.display='none'" class="exit text-hover-secondary float-r">&times;</span>
         <ul class="pt-1 mb-2">
         <li class="p-1 pt-1 font-xl"><h1 id="title" class="mt-4 talign-c font-xl ls-1 text-bg">{{__('Add new category')}}</h1></li>
-        <li class="p-1 font-xl"><form action="{{url('/')}}" method="POST">
+        <li class="p-1 font-xl"><form action="{{url('/add_category')}}" method="POST">
           @csrf
           <ul class="pt-1 mb-2">
             <li class="p-1 pt-3 font-xl"><input type="text" name="category" placeholder="Category name" required></li>

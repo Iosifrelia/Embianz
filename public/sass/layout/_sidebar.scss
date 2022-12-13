@@ -1,6 +1,6 @@
 
 %fixed-layout {
-  position: absolute;
+  position: fixed;
   left: 0;
   @include wh(15rem, 100%);
   overflow-y: scroll;

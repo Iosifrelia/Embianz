@@ -17,7 +17,7 @@
   .content-user{
     @extend .content;
     width: 90%;
-    height: 80%;
+    height: 95%;
     
     .exit{
       @include wh(3rem, auto);
@@ -122,6 +122,9 @@
       display: none;
     }
     & #button_user{
+      display: none;
+    }
+    & .dropdowncontent{
       display: none;
     }
     & #button_user_small{

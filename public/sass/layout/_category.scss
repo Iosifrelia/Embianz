@@ -18,8 +18,11 @@
     margin-top: 1rem;
     font-size: $base-font-size;
     
+    
   }
-
+  .content-category{
+    width: 95vw;
+  }
   #modal-category{
     z-index: 1;
   }
@@ -27,9 +30,12 @@
 }
 .content-category{
   @extend .content;
-      width: 100%;
-      height: 79%;
-      top: 5rem;
+  @include wh(50vw, auto);
+      top: 4.5rem;
+      padding: 0;
+      @media (max-width: 662px){
+        width: 95vw;
+      }
       
     #title{
       color: $secondary;
@@ -47,7 +53,10 @@
       }
 
       input {
-        @include wh(60%, auto);
+        @include wh(85%, auto);
+        @media (max-width: 662px){
+        @include wh(90%, auto);
+        }
         padding: $base-padding;
         background-color: $bg;
         &::placeholder{
@@ -63,7 +72,10 @@
       }
 
       .submit{
-        @include wh(25%, auto);
+        @include wh(40%, auto);
+        @media (max-width: 662px){
+          @include wh(50%, auto);
+          }
       }
 
     }

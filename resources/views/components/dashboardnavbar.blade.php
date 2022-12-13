@@ -11,13 +11,11 @@
 
         </form>
     </div>
-    <div>
+    <div class="dropdowncontent">
         <ul class="dropdown">
             <li class="ml-1 mr-2">
                 <button id="button_user" class="btn-secondary ls-1  font-md pb-1 pl-2 br-xs">{{ $user }}<img
                         src="/images/dashboard/navbar/chevron-down.svg" alt="icon" class="ml-1"></button>
-                
-
                 {{-- dropdown element // show profile and logout --}}
                 <div class="dropdown-content bg-secondary-light-1 font-sm o-80 p-1">
                     <a class="p-1 bg-secondary-dark-1 br-xs font-md" href="{{ route('profile.show') }}">{{ __('Profile') }}</a>
@@ -38,17 +36,5 @@
                 d="M17.5 20h-16c-0.827 0-1.5-0.673-1.5-1.5 0-0.068 0.014-1.685 1.225-3.3 0.705-0.94 1.67-1.687 2.869-2.219 1.464-0.651 3.283-0.981 5.406-0.981s3.942 0.33 5.406 0.981c1.199 0.533 2.164 1.279 2.869 2.219 1.211 1.615 1.225 3.232 1.225 3.3 0 0.827-0.673 1.5-1.5 1.5zM9.5 13c-3.487 0-6.060 0.953-7.441 2.756-1.035 1.351-1.058 2.732-1.059 2.746 0 0.274 0.224 0.498 0.5 0.498h16c0.276 0 0.5-0.224 0.5-0.5-0-0.012-0.023-1.393-1.059-2.744-1.382-1.803-3.955-2.756-7.441-2.756z">
             </path>
         </svg></button>
-        {{-- <div id="modal-user" class="modal-user bg-white-dark-2">
-            <div class="content-user">
-              <div>
-                <span onclick="document.getElementById('modal-user').style.display='none'" class="exit text-hover-secondary-dark-5 float-r">&times;</span>
-                <ul class="pt-5 mb-2">
-                <li class="p-1 pt-5 font-xl"><a class="text-secondary text-hover-secondary-light-3" href="{{ route('profile.show') }}">{{ __('Edit Profile') }}</a></li>
-                <li class="p-1 font-xl"><a class="text-secondary text-hover-secondary-light-3" href="{{ route('logout') }}">{{ __('Logout') }}</a></li>
-                </ul>
-              </div>
-            </div>
-          </div> --}}
     </div>
-
 </nav>
