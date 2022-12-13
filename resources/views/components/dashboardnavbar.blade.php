@@ -43,8 +43,8 @@
               <div>
                 <span onclick="document.getElementById('modal-user').style.display='none'" class="exit text-hover-secondary-dark-5 float-r">&times;</span>
                 <ul class="pt-5 mb-2">
-                <li class="p-1 pt-5 font-xl"><a href="{{ route('profile.show') }}">{{ __('Edit Profile') }}</a></li>
-                <li class="p-1 font-xl"><a href="{{ route('logout') }}">{{ __('Logout') }}</a></li>
+                <li class="p-1 pt-5 font-xl"><a class="text-secondary text-hover-secondary-light-3" href="{{ route('profile.show') }}">{{ __('Edit Profile') }}</a></li>
+                <li class="p-1 font-xl"><a class="text-secondary text-hover-secondary-light-3" href="{{ route('logout') }}">{{ __('Logout') }}</a></li>
                 </ul>
               </div>
             </div>

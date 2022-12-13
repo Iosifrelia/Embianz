@@ -2912,8 +2912,8 @@ li.dropdown {
 }
 .modal .content, .modal .content-category, .navbar .modal-user .content, .navbar .modal-user .content-category, .navbar-white .modal-user .content, .navbar-white .modal-user .content-category, .navbar-black .modal-user .content, .navbar-black .modal-user .content-category, .navbar-gray .modal-user .content, .navbar-gray .modal-user .content-category, .navbar-sidebar-bg .modal-user .content, .navbar-sidebar-bg .modal-user .content-category, .navbar-bg .modal-user .content, .navbar-bg .modal-user .content-category, .navbar-info .modal-user .content, .navbar-info .modal-user .content-category, .navbar-error .modal-user .content, .navbar-error .modal-user .content-category, .navbar-secondary .modal-user .content, .navbar-secondary .modal-user .content-category, .navbar-primary .modal-user .content, .navbar-primary .modal-user .content-category, .navbar .modal-user .content-user, .navbar-white .modal-user .content-user, .navbar-black .modal-user .content-user, .navbar-gray .modal-user .content-user, .navbar-sidebar-bg .modal-user .content-user, .navbar-bg .modal-user .content-user, .navbar-info .modal-user .content-user, .navbar-error .modal-user .content-user, .navbar-secondary .modal-user .content-user, .navbar-primary .modal-user .content-user {
   margin: auto;
-  background-color: #fff;
-  opacity: 90%;
+  background-color: #35424b;
+  opacity: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -3498,12 +3498,12 @@ li.dropdown {
 }
 @media (max-width: 662px) {
   .navbar .modal-user, .navbar-white .modal-user, .navbar-black .modal-user, .navbar-gray .modal-user, .navbar-sidebar-bg .modal-user, .navbar-bg .modal-user, .navbar-info .modal-user, .navbar-error .modal-user, .navbar-secondary .modal-user, .navbar-primary .modal-user {
-    padding-top: 4.5rem;
+    padding-top: 4rem;
   }
 }
 .navbar .modal-user .content-user, .navbar-white .modal-user .content-user, .navbar-black .modal-user .content-user, .navbar-gray .modal-user .content-user, .navbar-sidebar-bg .modal-user .content-user, .navbar-bg .modal-user .content-user, .navbar-info .modal-user .content-user, .navbar-error .modal-user .content-user, .navbar-secondary .modal-user .content-user, .navbar-primary .modal-user .content-user {
-  width: 95%;
-  height: 79%;
+  width: 90%;
+  height: 80%;
 }
 .navbar .modal-user .content-user .exit, .navbar-white .modal-user .content-user .exit, .navbar-black .modal-user .content-user .exit, .navbar-gray .modal-user .content-user .exit, .navbar-sidebar-bg .modal-user .content-user .exit, .navbar-bg .modal-user .content-user .exit, .navbar-info .modal-user .content-user .exit, .navbar-error .modal-user .content-user .exit, .navbar-secondary .modal-user .content-user .exit, .navbar-primary .modal-user .content-user .exit {
   width: 3rem;
@@ -3511,6 +3511,7 @@ li.dropdown {
   cursor: pointer;
   font-size: 28px;
   font-weight: bold;
+  color: hsl(152deg, 92%, 86%);
 }
 .navbar .site-title, .navbar-white .site-title, .navbar-black .site-title, .navbar-gray .site-title, .navbar-sidebar-bg .site-title, .navbar-bg .site-title, .navbar-info .site-title, .navbar-error .site-title, .navbar-secondary .site-title, .navbar-primary .site-title {
   font-size: 1.3125rem;
@@ -3750,11 +3751,17 @@ li.dropdown {
     margin-top: 1rem;
     font-size: 0.875rem;
   }
+  #modal-category {
+    z-index: 1;
+  }
 }
 .content-category {
   width: 100%;
   height: 79%;
   top: 5rem;
+}
+.content-category #title {
+  color: hsl(152deg, 92%, 86%);
 }
 .content-category .exit {
   width: 3rem;
@@ -3762,26 +3769,28 @@ li.dropdown {
   cursor: pointer;
   font-size: 28px;
   font-weight: bold;
+  color: hsl(152deg, 92%, 86%);
 }
 .content-category input {
   width: 60%;
   height: auto;
   padding: 0.75rem;
+  background-color: #35424b;
   transition: all 0.5s ease-in-out;
   -webkit-transition: width 0.4s ease-in-out;
-  color: #35424b;
-  border: 1px solid #35424b;
+  color: hsl(152deg, 92%, 86%);
+  border: 1px solid hsl(152deg, 92%, 86%);
 }
 .content-category input::-moz-placeholder {
-  color: #35424b;
+  color: hsl(152deg, 92%, 86%);
   opacity: 1;
 }
 .content-category input:-ms-input-placeholder {
-  color: #35424b;
+  color: hsl(152deg, 92%, 86%);
   opacity: 1;
 }
 .content-category input::placeholder {
-  color: #35424b;
+  color: hsl(152deg, 92%, 86%);
   opacity: 1;
 }
 .content-category .submit {

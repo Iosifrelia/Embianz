@@ -17,6 +17,11 @@
   #title{
     margin-top: 1rem;
     font-size: $base-font-size;
+    
+  }
+
+  #modal-category{
+    z-index: 1;
   }
   
 }
@@ -26,30 +31,39 @@
       height: 79%;
       top: 5rem;
       
+    #title{
+      color: $secondary;
+    }
+
       .exit{
         @include wh(3rem, auto);
         cursor: pointer;
         font-size: 28px;
         font-weight: bold;
+        color: $secondary;
+
+        
+
       }
 
       input {
         @include wh(60%, auto);
         padding: $base-padding;
-        //background-color: $sidebar-bg;
+        background-color: $bg;
         &::placeholder{
-          color: $bg;
+          color: $secondary;
           opacity: 1;
         }
         transition: $transition;
         -webkit-transition: width 0.4s ease-in-out;
-        color: $bg;
+        color: $secondary;
         //align-items: center;
-        border: 1px solid $bg;
+        border: 1px solid $secondary
         
       }
 
       .submit{
         @include wh(25%, auto);
       }
-}
+
+    }
