@@ -1,0 +1,25 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use App\Models\Category;
+
+class CategorySeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('categories')->insert([
+            'name' => Str::random(10),
+            'parent' => Str::random(10),
+            'long_description' => Str::random(50),
+            'short_description' => Str::random(5)
+        ]);
+    }
+}
