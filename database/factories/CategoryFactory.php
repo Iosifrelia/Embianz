@@ -23,7 +23,7 @@ class CategoryFactory extends Factory
             'short_description' => $this->faker->realText($maxNbChars = 10),
             'sequence' => $this->faker->numberBetween(1, 3),
             'start_date' => now(),
-            'end_date' => 'tomorrow',
+            'end_date' => $this->faker->date(),
             'createdby' => 'admin',
             'lastmodifiedby' => $this->faker->name(),
 

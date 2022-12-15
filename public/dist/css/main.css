@@ -3836,8 +3836,13 @@ li.dropdown {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 662px) {
+  .content-category .element label {
+    font-size: 0.875rem;
+  }
+}
 .content-category .element input {
-  width: 18%;
+  width: 25%;
   height: auto;
 }
 @media (max-width: 662px) {

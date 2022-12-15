@@ -86,10 +86,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        label{
+          @media (max-width: 662px){
+            font-size: $base-font-size;
+            }
+        }
         
         
         input{
-          @include wh(18%, auto);
+          @include wh(25%, auto);
           @media (max-width: 662px){
             @include wh(25%, auto);
             }
