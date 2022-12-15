@@ -3824,4 +3824,16 @@ li.dropdown {
     width: 50%;
     height: auto;
   }
+}
+.content-category .element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-category .element input {
+  width: 18%;
+  height: auto;
+}
+.content-category .element input::-webkit-calendar-picker-indicator {
+  filter: invert(0.8);
 }/*# sourceMappingURL=main.css.map */

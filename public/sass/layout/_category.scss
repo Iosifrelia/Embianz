@@ -78,4 +78,20 @@
           }
       }
 
+      .element{
+        // @include wh(85%, auto);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        input{
+          @include wh(18%, auto);
+          &::-webkit-calendar-picker-indicator {
+            filter: invert(0.8);
+             
+        } 
+        }
+      }
+
     }
