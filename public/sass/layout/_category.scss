@@ -8,6 +8,9 @@
       &:hover{
         @include wh(2.6rem, auto);
         cursor: pointer;
+        @media (max-width: 662px){
+          @include wh(1.8rem, auto);
+        }
       }
     }
   }
@@ -87,6 +90,9 @@
         
         input{
           @include wh(18%, auto);
+          @media (max-width: 662px){
+            @include wh(25%, auto);
+            }
           &::-webkit-calendar-picker-indicator {
             filter: invert(0.8);
              
