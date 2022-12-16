@@ -29,6 +29,9 @@
                     <form action="{{ url('/add_category') }}" method="POST">
                         @csrf
                         <ul class="pt-1 mb-2">
+                            <li class="p-1 mb-1 font-xl">
+                                <button class="reset bg-bg text-secondary float-r p-1" type="reset">Clear form</button>
+                            </li>
                             <li class="p-1 pt-3 font-xl">
                                 <input type="text" name="category" placeholder="Category name" required>
                             </li>

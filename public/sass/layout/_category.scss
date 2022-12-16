@@ -105,4 +105,13 @@
         }
       }
 
+      .reset{
+        border: 1px solid $secondary;
+        margin-right: 7.5%;
+        @media (max-width: 662px){
+          margin-right: 5%;
+          }
+      }
+      
+
     }
