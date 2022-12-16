@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,15 +15,22 @@ use App\Http\Controllers\AdminController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', fn () => view('home'))->name('home');
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
-    Route::get('/dashboard', function () {return view('dashboard');})->name('dashboard');
-    route::get('/category', [AdminController::class, 'category'])->name('category');
-    route::post('/add_category', [AdminController::class, 'add_category']);
+Route::middleware(['splade'])->group(function () {
     
+    Route::get('/docs', fn () => view('docs'))->name('docs');
+
+    Route::get('/dashboard', function () {return view('dashboard');})->name('dashboard');
+   
+    // Registers routes to support Table Bulk Actions and Exports...
+    Route::spladeTable();
+
+    // Registers routes to support async File Uploads with Filepond...
+    Route::spladeUploads();
 });
+
 route::get('/redirect', [HomeController::class, 'redirect'])->middleware('auth','verified')->name('redirect');
+route::get('/category', CategoryController::class)->name('category');
+route::post('/add_category', AdminController::class)->name('add_category');
+

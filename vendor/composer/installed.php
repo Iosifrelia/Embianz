@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '5c9a08ba8692c9d46efaf43a214471c2b79710a7',
+        'reference' => '523d30806c4a08490bcdd39bd0f9c08be306243f',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -442,7 +442,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '5c9a08ba8692c9d46efaf43a214471c2b79710a7',
+            'reference' => '523d30806c4a08490bcdd39bd0f9c08be306243f',
             'dev_requirement' => false,
         ),
         'laravel/pint' => array(
@@ -737,6 +737,15 @@
             'install_path' => __DIR__ . '/../pragmarx/google2fa',
             'aliases' => array(),
             'reference' => '80c3d801b31fe165f8fe99ea085e0a37834e1be3',
+            'dev_requirement' => false,
+        ),
+        'protonemedia/laravel-splade' => array(
+            'pretty_version' => '1.1.0',
+            'version' => '1.1.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../protonemedia/laravel-splade',
+            'aliases' => array(),
+            'reference' => '7aff4ea5867bf96bd306746ecaa85eaee2d64f0d',
             'dev_requirement' => false,
         ),
         'psr/container' => array(
