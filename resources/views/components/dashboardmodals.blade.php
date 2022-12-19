@@ -61,7 +61,7 @@
                                     <input class="ml-1" type="date" id="end_date" name="end_date" required>
                                 </div>
                             </li>
-                            <li class="p-1 font-xl"><input type="submit" class="submit" value="Add Catagory"
+                            <li class="p-1 font-xl"><input type="submit" class="submit" value="Add"
                                     name="submit"></li>
                         </ul>
                     </form>
