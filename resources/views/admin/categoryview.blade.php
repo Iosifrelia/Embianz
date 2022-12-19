@@ -5,7 +5,7 @@
   </x-slot>
 
   <div>
-    <x-splade-table :for="$categorys"></x-splade-table>
+    <x-splade-table :for="$categorys" />
   </div>
 
 </x-layout>

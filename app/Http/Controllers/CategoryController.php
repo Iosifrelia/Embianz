@@ -6,14 +6,14 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use ProtoneMedia\Splade\SpladeTable;
 
-class CategoryController extends Controller
+class CategoryController
 {
     public function __invoke(Request $request)
     {   
         $categorys = Category::get();
 
         return view('admin.categoryview', [
-            'categorys' => SpladeTable::for(Category::class)
+            'categorys' => SpladeTable::for($categorys)
             ->column('name')
             ->column('parrent')
             ->column('long_description')
