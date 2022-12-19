@@ -954,7 +954,7 @@ class Router implements BindingRegistrar, RegistrarContract
      * @param  array  $middleware
      * @return $this
      */
-    public function middlewareGroup($name, $middleware)
+    public function middlewareGroup($name, array $middleware)
     {
         $this->middlewareGroups[$name] = $middleware;
 

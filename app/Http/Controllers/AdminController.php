@@ -11,11 +11,6 @@ use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
-
-    public function __invoke()
-    {
-        return view('admin.home');
-    }
     //admin function
 
     public function category(){

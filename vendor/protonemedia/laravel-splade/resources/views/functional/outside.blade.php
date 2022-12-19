@@ -1,3 +1,0 @@
-<SpladeOnClickOutside {{ $attributes }}>
-    {{ $slot }}
-</SpladeOnClickOutside>
