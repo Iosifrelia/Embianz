@@ -1,28 +1,63 @@
-//theme colors
-//colors definition
+///////////// color sistem///////
+/// 
+//colors definition by default
+$blue: #5E50F9;
+$indigo: #6610f2;
+$purple: #6a008a;
+$pink: #E91E63;
+$red: #f96868;
+$orange: #f2a654;
+$yellow: #f6e84e;
+$green: #46c35f;
+$teal: #58d8a3;
+$cyan: #57c7d4;
+$black: #000;
+$white: #ffffff;
+$white-smoke: #f2f7f8;
+$violet: #41478a;
+$darkslategray : #2e383e;
+$dodger-blue : #3498db;
+
+//theme colors///
+
 $primary: #326dee !default;
-$secondary: #1ac888 !default;
+$secondary: hsl(152deg 92% 86%) !default;
+$succes: #1ac888 !default;
+$info: #8f5fe8 !default;
 $error: #d32752 !default;
-$info: #f6c31c !default;
-$bg: #28283f !default;
-$sidebar-bg: #2e2e48 !default;
+$warning: #f6c31c !default;
+$light: $white;
+$dark: #0d0d0d !default;
+
+///Color variables///
+$bg: #35424b!default;
+$sidebar-bg: #35424b !default;
 $sidebar-active-bg: rgba(23, 23, 37, 0.8) !default;
 $border:#7e73ff !default;
-$transition: all 0.5s ease-in-out; 
 
-//color palette
+////////// SOCIAL COLORS MAP //////////
+
+$social-colors: (
+  twitter: #2caae1,
+facebook: #3b579d,
+google: #dc4a38,
+linkedin: #0177b5,
+pinterest: #cc2127,
+youtube: #e52d27,
+github: #333333,
+behance: #1769ff,
+dribbble: #ea4c89,
+reddit: #ff4500);
+
+/// 
+//color maps
 $colors: (
   "primary": $primary,
   "secondary": $secondary,
   "error": $error,
   "info": $info,
   "bg": $bg,
-  "blue": #1c1ce4,
-  "red": red,
-  "yellow": yellow,
-  "green": green,
-  "orange": orange,
-  "purple": purple,
+  "sidebar-bg": $sidebar-bg,
   "gray": gray,
   "black": black,
   "white": white,
@@ -42,9 +77,24 @@ $base-border-radius: 20px !default;
 //box-shadow
 $base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1) !default;
 
+///FONT//// 
+////////// FONT-WEIGHT/////////
+
+$font-weight-light: 300;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$text-muted: #6c7293;
+$body-color: #ffffff;
+
 //font sizes
-$base-font-size: 1rem;
+$base-font-size: .875rem; //14px base font size
 $font-size-sm: $base-font-size * 0.75 !default;
 $font-size-lg: $base-font-size * 1.5 !default;
 $font-size-xl: $base-font-size * 2 !default;
 $font-size-xxl: $base-font-size * 3 !default;
+
+//transition variables///
+$transition: all 0.5s ease-in-out; 
+//transition variables///
+

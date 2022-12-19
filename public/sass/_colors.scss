@@ -13,6 +13,12 @@
     background-color: $val;
   }
 
+  .bg-hover-#{$key} {
+    &:hover{
+      background-color: $val;
+    }
+  }
+
   @if($val !=black and $val !=white) {
 
     //light variation
@@ -29,6 +35,11 @@
 
       .bg-#{$key}-light-#{$i} {
         background-color: mix(white, $val, $i * 10);
+      }
+      .bg-hover-#{$key}-light-#{$i} {
+        &:hover{
+          background-color: mix(white, $val, $i * 2.5);
+        }
       }
     }
 

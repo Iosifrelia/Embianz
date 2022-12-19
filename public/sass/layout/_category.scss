@@ -1,0 +1,117 @@
+.add-category{
+  button{
+    svg{
+      @include wh(2.5rem, auto);
+      @media (max-width: 662px){
+        @include wh(1.5rem, auto);
+      }
+      &:hover{
+        @include wh(2.6rem, auto);
+        cursor: pointer;
+        @media (max-width: 662px){
+          @include wh(1.8rem, auto);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 662px){
+  #title{
+    margin-top: 1rem;
+    font-size: $base-font-size;
+    
+    
+  }
+  .content-category{
+    width: 95vw;
+  }
+  #modal-category{
+    z-index: 1;
+  }
+  
+}
+.content-category{
+  @extend .content;
+  @include wh(50vw, auto);
+      top: 4.5rem;
+      padding: 0;
+      @media (max-width: 662px){
+        width: 95vw;
+      }
+      
+    #title{
+      color: $secondary;
+    }
+
+      .exit{
+        @include wh(3rem, auto);
+        cursor: pointer;
+        font-size: 28px;
+        font-weight: bold;
+        color: $secondary;
+
+        
+
+      }
+
+      input {
+        @include wh(85%, auto);
+        @media (max-width: 662px){
+        @include wh(90%, auto);
+        }
+        padding: $base-padding;
+        background-color: $bg;
+        &::placeholder{
+          color: $secondary;
+          opacity: 1;
+        }
+        transition: $transition;
+        -webkit-transition: width 0.4s ease-in-out;
+        color: $secondary;
+        //align-items: center;
+        border: 1px solid $secondary
+        
+      }
+
+      .submit{
+        @include wh(40%, auto);
+        @media (max-width: 662px){
+          @include wh(50%, auto);
+          }
+      }
+
+      .element{
+        // @include wh(85%, auto);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        label{
+          @media (max-width: 662px){
+            font-size: $base-font-size;
+            }
+        }
+        
+        
+        input{
+          @include wh(25%, auto);
+          @media (max-width: 662px){
+            @include wh(25%, auto);
+            }
+          &::-webkit-calendar-picker-indicator {
+            filter: invert(0.8);
+             
+        } 
+        }
+      }
+
+      .reset{
+        border: 1px solid $secondary;
+        margin-right: 7.5%;
+        @media (max-width: 662px){
+          margin-right: 5%;
+          }
+      }
+      
+
+    }
