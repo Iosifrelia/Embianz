@@ -15,12 +15,6 @@
     </div>
   </div>
 </div>
-<div class="row talign-c mt-2">
-  <div class="col-12-xs col-12-sm col-12-xl">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa alias mollitia expedita quibusdam nihil eos veniam cum perferendis, delectus, nostrum placeat quod, adipisci odio facere. Non quam aliquid cumque reiciendis.</p>
-    <x-splade-table :for="$categorys" />
-  </div>
-</div>
 </section>
 {{-- page content end --}}
 <x-dashboardscript />
