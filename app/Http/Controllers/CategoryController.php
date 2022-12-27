@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
-use RealRashid\SweetAlert\Facades\Alert;
 
 class CategoryController extends Controller
 {
@@ -25,8 +24,7 @@ class CategoryController extends Controller
 
     public function add_category(Request $request)
     { //add a new category to dbase
-        //$request->validate(['name'=>'require']);
-      
+        
             $data=new category;
             $data->name=$request->category;
             $data->parrent=$request->parrent;
@@ -38,7 +36,6 @@ class CategoryController extends Controller
             $data->createdby=Auth::user()->name;
             $data->lastmodifiedby=Auth::user()->name;
             $data->save();
-            //Alert::success('New Category added Successfully');
             return redirect()->back()->with('message','Category Added Succesfully!');
     
         
