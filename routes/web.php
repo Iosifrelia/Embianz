@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,8 +22,8 @@ Route::get('/', function () {
 
 Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
     Route::get('/dashboard', function () {return view('dashboard');})->name('dashboard');
-    route::get('/category', [AdminController::class, 'category'])->name('category');
-    route::post('/add_category', [AdminController::class, 'add_category']);
+    route::get('/category', [CategoryController::class, 'category'])->name('category');
+    route::post('/add_category', [CategoryController::class, 'add_category']);
     
 });
 route::get('/redirect', [HomeController::class, 'redirect'])->middleware('auth','verified')->name('redirect');
