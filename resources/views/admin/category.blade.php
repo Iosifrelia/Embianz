@@ -29,7 +29,39 @@
                     </svg></button>
             </div>
         </div>
+        <div class="col-12-xs col-12-sm col-12-xl">
+            {{-- Table Category --}}
+            <table class="category-table" id="category_table">
+                <tr>
+                    <td>Catagory Name</td>
+                    <td>Catagory Parrent</td>
+                    <td>Catagory Long Description</td>
+                    <td>Catagory Short Description</td>
+                    <td>Catagory Sequence</td>
+                    <td>Catagory Start Date</td>
+                    <td>Catagory End Date</td>
+                    <td>Action</td>
+                </tr>
+                @foreach($data as $category)
+                <tr>
+                    <td>{{$category->name}}</td>
+                    <td>{{$category->parrent}}</td>
+                    <td>{{$category->long_description}}</td>
+                    <td>{{$category->short_description}}</td>
+                    <td>{{$category->sequence}}</td>
+                    <td>{{$category->start_date}}</td>
+                    <td>{{$category->end_date}}</td>
+                    <td>Delete or Edit</td>
+                </tr>
+                @endforeach
+            </table>
+            {{--End Table Category --}}
+            {{--Show a lot off items on diferent pages--}}
+            {{$data->links()}}
+        </div>
+       
     </div>
+    
 </section>
 {{-- page content end --}}
 <x-dashboardscript />

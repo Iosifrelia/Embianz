@@ -13,7 +13,7 @@ class CategoryController extends Controller
     public function category(){
 
         if(Auth::id()){
-            $data=category::all();
+            $data=category::paginate(20);
         return view('admin.category',compact('data'));
         //display products category to page
     }
