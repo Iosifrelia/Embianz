@@ -6,20 +6,27 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
+use DataTables;
 
 class CategoryController extends Controller
 {
 
-    public function category(){
+    public function category(Request $request){
 
-        if(Auth::id()){
-            $data=category::paginate(20);
-        return view('admin.category',compact('data'));
-        //display products category to page
-    }
-        else{
-            return redirect('login');
-        }
+       
+            if($request->ajax()) {
+                $data = Category::select('id','name','parrent','short_description')->get();
+                return DataTables::of($data)->addIndexColumn()
+                    ->addColumn('action', function($data){
+                        $button = '<button type="button" name="edit" id=".$data->id">Edit</button>';
+                        $button .= '<button type="button" name="delete" id=".$data->id">Delete</button>';
+                        return $button;
+                    })
+                    ->make(true);
+            }
+            return view('admin.category');
+    
+    
     }
 
     public function add_category(Request $request)

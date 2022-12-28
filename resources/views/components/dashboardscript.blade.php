@@ -1,4 +1,20 @@
 <script>
+    $(document).ready( function () {
+        $('#category_table').DataTable({
+            processing: true,
+            serverSide: true,
+            ajax: "{{route('category')}}",
+            columns: [
+                {data: 'id', name: 'id'},
+                {data: 'name', name: 'name'},
+                {data: 'parrent', name: 'parrent'},
+                {data: 'short_description', name: 'short_description'},
+                {data: 'action', name: 'action', orderable: false, searchable: false},
+            ]
+        });
+    } );
+    </script>
+<script>
     
     /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
     var dropdown = document.getElementsByClassName("dropdown-btn");
@@ -32,4 +48,3 @@
 
    
 </script>
-
