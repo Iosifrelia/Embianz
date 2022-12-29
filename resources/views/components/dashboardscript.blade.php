@@ -36,7 +36,7 @@
         event.preventDefault();
         var id = $(this).attr('id');
 
-        $.ajax({
+        $.ajax({ 
             url: "/edit_category/" + id + "/",
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -62,6 +62,14 @@
         });
         
 
+    });
+    $(document).on('click', '.delete', function(event) {
+        event.preventDefault();
+        var id = $(this).attr('id');
+        
+        document.getElementById('confirmmodal-category').style.display = 'block';
+        $('#hiddenid').val(id);
+    
     });
 </script>
 <script>
@@ -98,6 +106,12 @@
     window.onclick = function(event) {
         if (event.target == modaleditcategory) {
             modaleditcategory.style.display = "none";
+        }
+    }
+    var modalconfirmcategory = document.getElementById("confirmmodal-category");
+    window.onclick = function(event) {
+        if (event.target == modalconfirmcategory) {
+            modalconfirmcategory.style.display = "none";
         }
     }
 </script>

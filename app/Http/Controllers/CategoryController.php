@@ -56,6 +56,12 @@ class CategoryController extends Controller
         }
     }
 
+    public function delete(Request $request){
+        $category=category::find($request->hiddenid);
+        $category->delete();
+        return redirect()->back()->with('message','Category Deleted Succesfully!');
+    }
+
     public function update_category(Request $request){
         
         $data= Category::find($request->hidden_id);

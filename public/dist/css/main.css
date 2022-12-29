@@ -3471,6 +3471,10 @@ li.dropdown {
   text-align: inherit;
 }
 
+.cursor-p {
+  cursor: pointer;
+}
+
 .navbar .container, .navbar-white .container, .navbar-black .container, .navbar-gray .container, .navbar-sidebar-bg .container, .navbar-bg .container, .navbar-info .container, .navbar-error .container, .navbar-secondary .container, .navbar-primary .container, .navbar .section-container, .navbar-white .section-container, .navbar-black .section-container, .navbar-gray .section-container, .navbar-sidebar-bg .section-container, .navbar-bg .section-container, .navbar-info .section-container, .navbar-error .section-container, .navbar-secondary .section-container, .navbar-primary .section-container, .navbar, .navbar-white, .navbar-black, .navbar-gray, .navbar-sidebar-bg, .navbar-bg, .navbar-info, .navbar-error, .navbar-secondary, .navbar-primary {
   width: 100%;
   display: flex;

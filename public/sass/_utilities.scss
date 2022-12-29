@@ -243,6 +243,13 @@ $utilities: (
       "in": inherit,
     ),
   ),
+  "cursor": (
+    "prefix": "cursor",
+    "values": (
+      "p": pointer,
+      
+    ),
+  ),
 );
 
 //generate utility classes
