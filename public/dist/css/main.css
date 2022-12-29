@@ -3742,23 +3742,23 @@ li.dropdown {
 }
 
 .add-category button svg {
-  width: 2.5rem;
+  width: 2rem;
   height: auto;
 }
 @media (max-width: 662px) {
   .add-category button svg {
-    width: 1.5rem;
+    width: 1rem;
     height: auto;
   }
 }
 .add-category button svg:hover {
-  width: 2.6rem;
+  width: 2.1rem;
   height: auto;
   cursor: pointer;
 }
 @media (max-width: 662px) {
   .add-category button svg:hover {
-    width: 1.8rem;
+    width: 1.1rem;
     height: auto;
   }
 }
@@ -3871,6 +3871,15 @@ li.dropdown {
 table {
   border: 1px solid hsl(152deg, 92%, 86%);
 }
-table thead {
-  text-align: center;
+
+#confirmmodal-category .content-category {
+  top: 40%;
+  width: 30%;
+  height: auto;
+}
+@media (max-width: 662px) {
+  #confirmmodal-category .content-category {
+    width: 80%;
+    height: auto;
+  }
 }/*# sourceMappingURL=main.css.map */

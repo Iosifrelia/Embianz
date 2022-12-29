@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Category;
@@ -13,26 +11,22 @@ class CategoryController extends Controller
 {
 
     public function category(Request $request){
-
        
             if($request->ajax()) {
                 $data= Category::query();
                 return DataTables::eloquent($data)
                     ->addColumn('action', function($data){
-                        $button = '<button type="button" class="view btn-bg br-xs"  name="wiew" id="'.$data->id.'">Update</button>';
+                        $button = '<button type="button" class="view btn-bg br-xs"  name="wiew" id="'.$data->id.'">Edit</button>';
                         $button .= '<button type="button" class="delete ml-1 btn-secondary text-bg br-xs"  name="delete" id="'.$data->id.'">Delete</button>';
                         return $button;
                     })
                     ->make(true);
             }
             return view('admin.category');
-    
-    
     }
 
     public function add_category(Request $request)
-    { //add a new category to dbase
-        
+    {       //add a new category to dbase
             $data=new category;
             $data->name=$request->category;
             $data->parrent=$request->parrent;
@@ -45,11 +39,10 @@ class CategoryController extends Controller
             $data->lastmodifiedby=Auth::user()->name;
             $data->save();
             return redirect()->back()->with('message','Category Added Succesfully!');
-    
-        
     }
 
     public function edit($id){
+        //edit category
         if(request()->ajax()){
         $data = Category::findOrFail($id);
         return response()->json(['result' =>$data]);

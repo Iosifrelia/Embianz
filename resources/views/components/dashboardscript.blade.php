@@ -36,7 +36,7 @@
         event.preventDefault();
         var id = $(this).attr('id');
 
-        $.ajax({ 
+        $.ajax({
             url: "/edit_category/" + id + "/",
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -60,16 +60,16 @@
                 console.log(errors);
             }
         });
-        
+
 
     });
     $(document).on('click', '.delete', function(event) {
         event.preventDefault();
         var id = $(this).attr('id');
-        
+
         document.getElementById('confirmmodal-category').style.display = 'block';
         $('#hiddenid').val(id);
-    
+
     });
 </script>
 <script>

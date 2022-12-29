@@ -13,11 +13,12 @@
     @endif
     {{-- End Section session message --}}
     <h1 id="title" class="mt-1 talign-c font-xl ls-1 text-secondary">{{ __('All categories') }}</h1>
-    <div class="row talign-c mt-1">
+    <div class="row talign-c">
         <div class="col-12-xs col-12-sm col-12-xl">
             <div class="add-category">
                 <button onclick="document.getElementById('modal-category').style.display='block'"
-                    class="bg-sidebar-bg-light-1 mt-1"><svg class="talign-c bg-sidebar-bg-light-1" version="1.1"
+                    class="bg-sidebar-bg-light-1 float-l ml-4 mr-1">
+                    <svg class="talign-c bg-sidebar-bg-light-1" version="1.1"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
                         height="20" viewBox="0 0 20 20">
                         <path fill="#bafcdd"
@@ -26,7 +27,8 @@
                         <path fill="#bafcdd"
                             d="M11.5 13h-2.5v-2.5c0-0.276-0.224-0.5-0.5-0.5s-0.5 0.224-0.5 0.5v2.5h-2.5c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5h2.5v2.5c0 0.276 0.224 0.5 0.5 0.5s0.5-0.224 0.5-0.5v-2.5h2.5c0.276 0 0.5-0.224 0.5-0.5s-0.224-0.5-0.5-0.5z">
                         </path>
-                    </svg></button>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
@@ -43,14 +45,11 @@
                     <th>Action</th>
                 </tr>
             </thead>
-                <tbody class="pt-1"></tbody>
+                <tbody></tbody>
             </table>
             {{--End Table Category --}}
-            
         </div>
-       
     </div>
-    
 </section>
 {{-- page content end --}}
 <x-dashboardscript />
