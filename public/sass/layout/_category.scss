@@ -115,3 +115,9 @@
       
 
     }
+    table{
+      border: 1px solid $secondary;
+      thead{
+        text-align: center;
+      }
+    }

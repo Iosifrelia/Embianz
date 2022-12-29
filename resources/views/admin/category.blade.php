@@ -12,7 +12,7 @@
         </div>
     @endif
     {{-- End Section session message --}}
-    <h1 id="title" class="mt-4 talign-c font-xl ls-1 text-secondary">{{ __('Categories') }}</h1>
+    <h1 id="title" class="mt-1 talign-c font-xl ls-1 text-secondary">{{ __('All categories') }}</h1>
     <div class="row talign-c mt-1">
         <div class="col-12-xs col-12-sm col-12-xl">
             <div class="add-category">
@@ -29,19 +29,21 @@
                     </svg></button>
             </div>
         </div>
+    </div>
+    <div class="row talign-c mt-1">
         <div class="col-12-xs col-12-sm col-12-xl m-2 p-1 text-secondary">
             {{-- Table Category --}}
-            <table class="category-table p-1 m-1" id="category_table">
-                <thead>
+            <table class="category-table mb-1 mt-3 p-2" id="category_table">
+                <thead class="pb-1">
                 <tr>
                     <th>Catagory Id</th>
                     <th>Catagory Name</th>
                     <th>Catagory Parrent</th>
                     <th>Catagory Short Description</th>
-                    <th>Action</td>
+                    <th>Action</th>
                 </tr>
             </thead>
-                <tbody></tbody>
+                <tbody class="pt-1"></tbody>
             </table>
             {{--End Table Category --}}
             

@@ -3862,4 +3862,11 @@ li.dropdown {
   .content-category .reset {
     margin-right: 5%;
   }
+}
+
+table {
+  border: 1px solid hsl(152deg, 92%, 86%);
+}
+table thead {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
 use DataTables;
+use Validator;
 
 class CategoryController extends Controller
 {
@@ -15,11 +16,11 @@ class CategoryController extends Controller
 
        
             if($request->ajax()) {
-                $data = Category::select('id','name','parrent','short_description')->get();
-                return DataTables::of($data)->addIndexColumn()
+                $data= Category::query();
+                return DataTables::eloquent($data)
                     ->addColumn('action', function($data){
-                        $button = '<button type="button" name="edit" id=".$data->id">Edit</button>';
-                        $button .= '<button type="button" name="delete" id=".$data->id">Delete</button>';
+                        $button = '<button type="button" class="view btn-bg br-xs"  name="wiew" id="'.$data->id.'">Update</button>';
+                        $button .= '<button type="button" class="delete ml-1 btn-secondary text-bg br-xs"  name="delete" id="'.$data->id.'">Delete</button>';
                         return $button;
                     })
                     ->make(true);
@@ -45,6 +46,29 @@ class CategoryController extends Controller
             $data->save();
             return redirect()->back()->with('message','Category Added Succesfully!');
     
+        
+    }
+
+    public function edit($id){
+        if(request()->ajax()){
+        $data = Category::findOrFail($id);
+        return response()->json(['result' =>$data]);
+        }
+    }
+
+    public function update_category(Request $request){
+        
+        $data= Category::find($request->hidden_id);
+        $data->name=$request->categoryname;
+        $data->parrent=$request->category_parrent;
+        $data->long_description=$request->category_long_description;
+        $data->short_description=$request->category_short_description;
+        $data->sequence=$request->category_sequence;
+        $data->start_date=$request->category_start_date;
+        $data->end_date=$request->category_end_date;
+        $data->lastmodifiedby=Auth::user()->name;
+        $data->save();
+        return redirect()->back()->with('message','Category Update Succesfully!');
         
     }
 }
