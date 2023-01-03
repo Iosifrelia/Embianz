@@ -1,6 +1,10 @@
 table {
   border: 1px solid $secondary;
   color: $white;
+  @include wh(90%, auto);
+  @media (max-width: 662px) {
+    @include wh(80%, auto);
+  }
 
   tbody {
     tr {

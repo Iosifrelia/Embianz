@@ -139,6 +139,74 @@
         </div>
     </div>
 </div>
+
+{{-- Show category details --}}
+<div id="show-category" class="modal">
+    <div class="content-category o-50">
+        <div>
+            <span onclick="document.getElementById('show-category').style.display='none'"
+                class="exit text-hover-secondary float-r">&times;</span>
+            <ul class="pt-1 mb-2">
+                <li class="p-1 pt-1 font-xl">
+                    <h1 id="title" class="modal-title talign-c font-xl ls-1 text-bg">{{ __('Add new category') }}
+                    </h1>
+                </li>
+                <li class="p-1 font-xl">
+                    <form id="editcategory_form" action="{{ url('/category_update') }}" method="POST">
+                        @csrf
+                        <ul class="pt-1 mb-2">
+                            <li class="p-1 mb-1 font-xl">
+                                <button class="reset bg-bg text-secondary float-r p-1" type="reset">Clear
+                                    form</button>
+                            </li>
+                            <li class="p-1 pt-3 font-xl">
+                                <input type="text" name="categoryname" id="category_name" placeholder="Category name"
+                                    required>
+                            </li>
+                            <li class="p-1 font-xl">
+                                <input type="text" name="category_parrent" id="category_parrent"
+                                    placeholder="Parent catagory name" required>
+                            </li>
+                            <li class="p-1 font-xl">
+                                <input type="text" id="category_long_description" name="category_long_description"
+                                    placeholder="Long description catagory name" required>
+                            </li>
+                            <li class="p-1 font-xl">
+                                <input type="text" name="category_short_description"
+                                    id="category_short_description" placeholder="Short description catagory name"
+                                    required>
+                            </li>
+                            <li class="p-1 font-xl">
+                                <input type="number" name="category_sequence" id="category_sequence"
+                                    placeholder="Catagory sequence" required>
+                            </li>
+                            <li class="p-1 font-xl">
+                                <div class="element">
+                                    <label class="font-lg text-secondary ls-1" for="start_date">Start Date -</label>
+                                    <input class="ml-1" type="date" id="category_start_date"
+                                        name="category_start_date" required>
+                                </div>
+                            </li>
+                            <li class="p-1 font-xl talign-c">
+                                <div class="element">
+                                    <label class="font-lg text-secondary ls-1" for="end_date">End Date -</label>
+                                    <input class="ml-1" type="date" id="category_end_date"
+                                        name="category_end_date" required>
+                                    <input type="hidden" name="hidden_id" id="hidden_id">
+                                </div>
+                            </li>
+                            <li class="p-1 font-xl">
+                                <input type="submit" class="submit bg-hover-bg-light-2" value="Update"
+                                    name="submit">
+                            </li>
+                        </ul>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 {{-- Confirm Delete Category modal --}}
 <div id="confirmmodal-category" class="modal">
     <div class="content-category">
