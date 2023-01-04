@@ -57,10 +57,10 @@
   }
 
   input {
-    @include wh(85%, auto);
+    @include wh(40%, auto);
 
     @media (max-width: 662px) {
-      @include wh(90%, auto);
+      @include wh(70%, auto);
     }
 
     padding: $base-padding;
@@ -78,9 +78,9 @@
   }
 
   .submit {
-    @include wh(40%, auto);
+    @include wh(20%, auto);
     @media (max-width: 662px) {
-      @include wh(50%, auto);
+      @include wh(30%, auto);
     }
   }
 

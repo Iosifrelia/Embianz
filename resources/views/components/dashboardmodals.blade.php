@@ -31,7 +31,7 @@
                         @csrf
                         <ul class="pt-1 mb-2">
                             <li class="p-1 mb-1 font-xl">
-                                <button class="reset bg-bg text-secondary float-r p-1" type="reset">Clear
+                                <button class="reset bg-bg cursor-p text-secondary float-r p-1" type="reset">Clear
                                     form</button>
                             </li>
                             <li class="p-1 pt-3 font-xl">
@@ -63,7 +63,7 @@
                                     <input class="ml-1" type="date" id="end_date" name="end_date" required>
                                 </div>
                             </li>
-                            <li class="p-1 font-xl"><input type="submit" class="submit" value="Add" name="submit">
+                            <li class="p-1 font-xl"><input type="submit" class="submit cursor-p" value="Add" name="submit">
                             </li>
                         </ul>
                     </form>
@@ -73,11 +73,11 @@
     </div>
 </div>
 
-{{-- Edit Category modal --}}
-<div id="editmodal-category" class="modal">
+{{-- view Category modal --}}
+<div id="viewmodal-category" class="modal">
     <div class="content-category o-50">
         <div>
-            <span onclick="document.getElementById('editmodal-category').style.display='none'"
+            <span onclick="document.getElementById('viewmodal-category').style.display='none'"
                 class="exit text-hover-secondary float-r">&times;</span>
             <ul class="pt-1 mb-2">
                 <li class="p-1 pt-1 font-xl">
@@ -88,80 +88,127 @@
                     <form id="editcategory_form" action="{{ url('/category_update') }}" method="POST">
                         @csrf
                         <ul class="pt-1 mb-2">
-                            <li class="p-1 mb-1 font-xl">
-                                <button class="reset bg-bg text-secondary float-r p-1" type="reset">Clear
-                                    form</button>
-                            </li>
+                            
                             <li class="p-1 pt-3 font-xl">
+                                <label class="font-lg text-secondary ls-1" for="end_date">Name -</label>
                                 <input type="text" name="categoryname" id="category_name" placeholder="Category name"
-                                    required>
+                                     readonly>
                             </li>
                             <li class="p-1 font-xl">
+                                <label class="font-lg text-secondary ls-1" for="end_date">Parrent -</label>
                                 <input type="text" name="category_parrent" id="category_parrent"
-                                    placeholder="Parent catagory name" required>
+                                    placeholder="Parent catagory name" readonly>
                             </li>
                             <li class="p-1 font-xl">
+                                <label class="font-lg text-secondary ls-1" for="end_date">Long Description -</label>
                                 <input type="text" id="category_long_description" name="category_long_description"
-                                    placeholder="Long description catagory name" required>
+                                    placeholder="Long description catagory name" readonly>
                             </li>
                             <li class="p-1 font-xl">
+                                <label class="font-lg text-secondary ls-1" for="end_date">Short Description -</label>
                                 <input type="text" name="category_short_description"
                                     id="category_short_description" placeholder="Short description catagory name"
-                                    required>
+                                    readonly>
                             </li>
                             <li class="p-1 font-xl">
+                                <label class="font-lg text-secondary ls-1" for="end_date">Sequence -</label>
                                 <input type="number" name="category_sequence" id="category_sequence"
-                                    placeholder="Catagory sequence" required>
+                                    placeholder="Catagory sequence" readonly>
                             </li>
                             <li class="p-1 font-xl">
                                 <div class="element">
                                     <label class="font-lg text-secondary ls-1" for="start_date">Start Date -</label>
                                     <input class="ml-1" type="date" id="category_start_date"
-                                        name="category_start_date" required>
+                                        name="category_start_date" readonly>
                                 </div>
                             </li>
                             <li class="p-1 font-xl talign-c">
                                 <div class="element">
                                     <label class="font-lg text-secondary ls-1" for="end_date">End Date -</label>
                                     <input class="ml-1" type="date" id="category_end_date"
-                                        name="category_end_date" required>
+                                        name="category_end_date" readonly>
                                     <input type="hidden" name="hidden_id" id="hidden_id">
                                 </div>
                             </li>
                             <li class="p-1 font-xl">
-                                <input type="submit" class="submit bg-hover-bg-light-2" value="Update"
-                                    name="submit">
+                                {{-- <input type="submit" class="submit bg-hover-bg-light-2" value="Update"
+                                    name="submit"> --}}
                             </li>
                         </ul>
                     </form>
+                </li>
+                <li>
+                    <button onclick="document.getElementById('modal-category').style.display='block'; document.getElementById('viewmodal-category').style.display='none'"
+                    class="btn-outlined-secondary text-bg br-xs">Add new category</button>
+                    <button type="button" class="edit btn-bg br-xs"  name="edit" id="view">Edit</button>
+                    <button type="button" class="delete ml-1 btn-secondary text-bg br-xs"  name="delete" id="delete'">Delete</button>
                 </li>
             </ul>
         </div>
     </div>
 </div>
 
-{{-- Show category details --}}
-<div id="show-category" class="modal">
-    <div class="content-category">
+{{-- update Category modal --}}
+<div id="editmodal-category" class="modal">
+    <div class="content-category o-50">
         <div>
-            <span onclick="document.getElementById('show-category').style.display='none'"
+            <span onclick="document.getElementById('editmodal-category').style.display='none'"
                 class="exit text-hover-secondary float-r">&times;</span>
             <ul class="pt-1 mb-2">
                 <li class="p-1 pt-1 font-xl">
-                    <h1 class="modal-title talign-c font-xl ls-1 text-secondary">
-                        {{ __('Category details') }}
+                    <h1 id="title" class="modaltitle talign-c font-xl ls-1 text-bg">
                     </h1>
                 </li>
                 <li class="p-1 font-xl">
-                    <form id="deletecategory_form" action="{{ url('/delete_category') }}" method="POST">
+                    <form id="editcategory_form" action="{{ url('/category_update') }}" method="POST">
                         @csrf
                         <ul class="pt-1 mb-2">
+                            
+                            <li class="p-1 pt-3 font-xl">
+                                <label class="font-lg text-secondary ls-1" for="end_date">Name -</label>
+                                <input type="text" name="categorynameupdate" id="categoryname" placeholder="Category name"
+                                     required>
+                            </li>
                             <li class="p-1 font-xl">
-                                <input type="hidden" name="hiddenid" id="hiddenid">
-                                <input type="submit" class="submit cursor-p bg-hover-bg-light-2" value="Confirm"
+                                <label class="font-lg text-secondary ls-1" for="end_date">Parrent -</label>
+                                <input type="text" name="category_parrentupdate" id="categoryparrent"
+                                    placeholder="Parent catagory name" required>
+                            </li>
+                            <li class="p-1 font-xl">
+                                <label class="font-lg text-secondary ls-1" for="end_date">Long Description -</label>
+                                <input type="text" id="categorylong_description" name="category_long_descriptionupdate"
+                                    placeholder="Long description catagory name" required>
+                            </li>
+                            <li class="p-1 font-xl">
+                                <label class="font-lg text-secondary ls-1" for="end_date">Short Description -</label>
+                                <input type="text" name="category_short_descriptionupdate"
+                                    id="categoryshort_description" placeholder="Short description catagory name"
+                                    required>
+                            </li>
+                            <li class="p-1 font-xl">
+                                <label class="font-lg text-secondary ls-1" for="end_date">Sequence -</label>
+                                <input type="number" name="category_sequenceupdate" id="categorysequence"
+                                    placeholder="Catagory sequence" required>
+                            </li>
+                            <li class="p-1 font-xl">
+                                <div class="element">
+                                    <label class="font-lg text-secondary ls-1" for="start_date">Start Date -</label>
+                                    <input class="ml-1" type="date" id="categorystart_date"
+                                        name="category_start_dateupdate" required>
+                                </div>
+                            </li>
+                            <li class="p-1 font-xl talign-c">
+                                <div class="element">
+                                    <label class="font-lg text-secondary ls-1" for="end_date">End Date -</label>
+                                    <input class="ml-1" type="date" id="categoryend_date"
+                                        name="category_end_dateupdate" required>
+                                    
+                                </div>
+                            </li>
+                            <li class="p-1 font-xl">
+                                <input type="submit" class="submit bg-hover-bg-light-2" value="Update"
                                     name="submit">
-                                <input onclick="document.getElementById('confirmmodal-category').style.display='none'"
-                                    class="submit cursor-p talign-c bg-hover-bg-light-2" value="Cancel">
+                                    <input type="hidden" name="idupdate" id="idupdate">
                             </li>
                         </ul>
                     </form>
@@ -179,7 +226,7 @@
                 class="exit text-hover-secondary float-r">&times;</span>
             <ul class="pt-1 mb-2">
                 <li class="p-1 pt-1 font-xl">
-                    <h1 class="modal-title talign-c font-xl ls-1 text-secondary">
+                    <h1 class="title talign-c font-xl ls-1 text-secondary">
                         {{ __('Are you sure to delete this Category ?') }}
                     </h1>
                 </li>

@@ -32,12 +32,13 @@
     });
 </script>
 <script>
+    //view category script
     $(document).on('click', '.view', function(event) {
         event.preventDefault();
         var id = $(this).attr('id');
 
         $.ajax({
-            url: "/edit_category/" + id + "/",
+            url: "/show_category/" + id + "/",
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
@@ -51,7 +52,39 @@
                 $('#category_start_date').val(data.result.start_date);
                 $('#category_end_date').val(data.result.end_date);
                 $('#hidden_id').val(id);
-                $('.modal-title').text('Update - ' + data.result.name + ' - category');
+                $('.modal-title').text('View - ' + data.result.name + ' - category');
+                document.getElementById('viewmodal-category').style.display = 'block';
+
+            },
+            error: function(data) {
+                var errors = data.responseJSON;
+                console.log(errors);
+            }
+        });
+    });
+
+    //edit category script
+    $(document).on('click', '.edit', function(event) {
+        event.preventDefault();
+        const input = document.getElementById('hidden_id');
+        var id = input.value;
+
+        $.ajax({
+            url: "/edit_category/" + id + "/",
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            dataType: "json",
+            success: function(data) {
+                $('#categoryname').val(data.result.name);
+                $('#categoryparrent').val(data.result.parrent);
+                $('#categorylong_description').val(data.result.long_description);
+                $('#categoryshort_description').val(data.result.short_description);
+                $('#categorysequence').val(data.result.sequence);
+                $('#categorystart_date').val(data.result.start_date);
+                $('#categoryend_date').val(data.result.end_date);
+                $('#idupdate').val(id);
+                $('.modaltitle').text('Edit - ' + data.result.name + ' - category');
                 document.getElementById('editmodal-category').style.display = 'block';
 
             },
@@ -60,12 +93,13 @@
                 console.log(errors);
             }
         });
-
-
     });
+
+    //delete script
     $(document).on('click', '.delete', function(event) {
         event.preventDefault();
-        var id = $(this).attr('id');
+        const input = document.getElementById('hidden_id');
+        var id = input.value;
 
         document.getElementById('confirmmodal-category').style.display = 'block';
         $('#hiddenid').val(id);
@@ -102,10 +136,16 @@
             modalcategory.style.display = "none";
         }
     }
-    var modaleditcategory = document.getElementById("editmodal-category");
+    var modaleditcategory = document.getElementById("viewmodal-category");
     window.onclick = function(event) {
         if (event.target == modaleditcategory) {
             modaleditcategory.style.display = "none";
+        }
+    }
+    var modalupdate = document.getElementById("editmodal-category");
+    window.onclick = function(event) {
+        if (event.target == modalupdate) {
+            modalupdate.style.display = "none";
         }
     }
     var modalconfirmcategory = document.getElementById("confirmmodal-category");
