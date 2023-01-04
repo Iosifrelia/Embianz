@@ -85,6 +85,7 @@ button {
 }
 .container, .section-container {
   width: 100%;
+  height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2 20px;
@@ -2922,6 +2923,53 @@ li.dropdown {
   text-align: center;
 }
 
+table {
+  border: 1px solid hsl(152deg, 92%, 86%);
+  color: #ffffff;
+  width: 90%;
+  height: auto;
+}
+@media (max-width: 662px) {
+  table {
+    width: 80%;
+    height: auto;
+  }
+}
+table tbody tr td {
+  border-left: 1px solid hsl(152deg, 92%, 86%);
+  border-right: 1px solid hsl(152deg, 92%, 86%);
+}
+
+th {
+  text-align: center;
+  border: 1px solid hsl(152deg, 92%, 86%);
+}
+
+.dataTables_length {
+  padding: 0.75rem;
+}
+.dataTables_length label {
+  margin-right: 0.75rem;
+}
+.dataTables_length select {
+  margin: 0.75rem;
+}
+.dataTables_length select option {
+  background-color: #35424b;
+}
+
+.dataTables_filter {
+  padding: 0.75rem;
+}
+
+.dataTables_info {
+  padding-top: 0.75rem;
+}
+
+.dataTables_paginate {
+  padding-top: 0.75rem;
+}
+
 .p-0 {
   padding: 0;
 }
@@ -3866,10 +3914,6 @@ li.dropdown {
   .content-category .reset {
     margin-right: 5%;
   }
-}
-
-table {
-  border: 1px solid hsl(152deg, 92%, 86%);
 }
 
 #confirmmodal-category .content-category {

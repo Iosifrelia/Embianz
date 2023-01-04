@@ -6,7 +6,7 @@
         <div>
             <span onclick="document.getElementById('modal-user').style.display='none'"
                 class="exit text-hover-secondary-dark-5 float-r">&times;</span>
-            <ul class="pt-5 mb-2">
+            <ul class="pt-5 mb-2 ">
                 <li class="p-1 pt-5 font-xl"><a class="text-secondary text-hover-secondary-light-3"
                         href="{{ route('profile.show') }}">{{ __('Edit Profile') }}</a></li>
                 <li class="p-1 font-xl"><a class="text-secondary text-hover-secondary-light-3"
@@ -139,6 +139,38 @@
         </div>
     </div>
 </div>
+
+{{-- Show category details --}}
+<div id="show-category" class="modal">
+    <div class="content-category">
+        <div>
+            <span onclick="document.getElementById('show-category').style.display='none'"
+                class="exit text-hover-secondary float-r">&times;</span>
+            <ul class="pt-1 mb-2">
+                <li class="p-1 pt-1 font-xl">
+                    <h1 class="modal-title talign-c font-xl ls-1 text-secondary">
+                        {{ __('Category details') }}
+                    </h1>
+                </li>
+                <li class="p-1 font-xl">
+                    <form id="deletecategory_form" action="{{ url('/delete_category') }}" method="POST">
+                        @csrf
+                        <ul class="pt-1 mb-2">
+                            <li class="p-1 font-xl">
+                                <input type="hidden" name="hiddenid" id="hiddenid">
+                                <input type="submit" class="submit cursor-p bg-hover-bg-light-2" value="Confirm"
+                                    name="submit">
+                                <input onclick="document.getElementById('confirmmodal-category').style.display='none'"
+                                    class="submit cursor-p talign-c bg-hover-bg-light-2" value="Cancel">
+                            </li>
+                        </ul>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 {{-- Confirm Delete Category modal --}}
 <div id="confirmmodal-category" class="modal">
     <div class="content-category">
