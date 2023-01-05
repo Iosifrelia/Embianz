@@ -40,6 +40,10 @@
   top: 4.5rem;
   padding: 0;
 
+  #new, #delete, #edit{
+    @include wh(10%, auto);
+  }
+
   @media (max-width: 662px) {
     width: 95vw;
   }

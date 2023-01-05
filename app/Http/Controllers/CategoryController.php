@@ -16,7 +16,7 @@ class CategoryController extends Controller
                 $data= Category::query();
                 return DataTables::eloquent($data)
                     ->addColumn('action', function($data){
-                        $button = '<button type="button" class="view btn-bg br-xs"  name="view" id="'.$data->id.'">View</button>';
+                        $button = '<button type="button" class="view btn-bg text-secondary br-xs"  name="view" id="'.$data->id.'">View</button>';
                         return $button;
                     })
                     ->make(true);

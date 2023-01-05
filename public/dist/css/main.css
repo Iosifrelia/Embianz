@@ -3829,6 +3829,10 @@ th {
   top: 4.5rem;
   padding: 0;
 }
+.content-category #new, .content-category #delete, .content-category #edit {
+  width: 10%;
+  height: auto;
+}
 @media (max-width: 662px) {
   .content-category {
     width: 95vw;
