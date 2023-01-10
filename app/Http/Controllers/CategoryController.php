@@ -3,7 +3,11 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Category;
+use App\Models\ImageCategories;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
+use Intervention\Image\Facades\Image;
+use Intervention\Image\ImageManagerStatic as Imagee;
 use DataTables;
 use Validator;
 
@@ -27,6 +31,7 @@ class CategoryController extends Controller
     public function add_category(Request $request)
     {       //add a new category to dbase
             $data=new category;
+            $imagecategory= new imagecategories;
             $data->name=$request->category;
             $data->parrent=$request->parrent;
             $data->long_description=$request->long_description;
@@ -37,6 +42,18 @@ class CategoryController extends Controller
             $data->createdby=Auth::user()->name;
             $data->lastmodifiedby=Auth::user()->name;
             $data->save();
+            //save category image
+
+            $image =$request->category_image;
+            $imagename=time().'.'.$image->getClientOriginalExtension();
+            $request->category_image->move('categories',$imagename);
+            
+            $imagecategory->category_id= $data->id;
+            $imagecategory->img_main_path=$imagename;
+            $imagecategory->img_main_path=$imagename;
+            $imagecategory->img_sequence=$request->image_sequence;
+            
+            $imagecategory->save();
             return redirect()->back()->with('message','Category Added Succesfully!');
     }
 

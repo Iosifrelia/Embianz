@@ -27,7 +27,7 @@
                     <h1 id="title" class="talign-c font-xl ls-1 text-bg">{{ __('Add new category') }}</h1>
                 </li>
                 <li class="p-1 font-xl">
-                    <form action="{{ url('/add_category') }}" method="POST">
+                    <form action="{{ url('/add_category') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <ul class="pt-1 mb-2">
                             <li class="p-1 mb-1 font-xl">
@@ -67,6 +67,12 @@
                                 <div class="element">
                                     <label class="font-lg text-secondary ls-1" for="end_date">Image -</label>
                                     <input type="file" class="ml-1"  id="category_image" name="category_image">
+                                </div>
+                            </li>
+                            <li class="p-1 font-xl talign-c">
+                                <div class="element">
+                                    <label class="font-lg text-secondary ls-1" for="end_date">Image Sequence -</label>
+                                    <input type="number" name="image_sequence" placeholder="Image sequence" required>
                                 </div>
                             </li>
                             <li class="p-1 font-xl"><input type="submit" class="submit cursor-p" value="Add"

@@ -4,10 +4,16 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\ImageCategories;
 
 class Category extends Model
 {
     use HasFactory;
+
+    public function imagecategories()
+    {
+        return $this->hasMany(ImageCategories::class);
+    }
 
     protected $fillable = [
         'name',

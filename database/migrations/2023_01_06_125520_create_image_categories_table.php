@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('image_categories', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('category_id');
+            $table->unsignedBigInteger('category_id')->index();
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->string('img_main_path')->nullable();
             $table->string('img_sequence')->nullable();
