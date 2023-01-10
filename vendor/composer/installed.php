@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'd0cf5bd1edf6940194b8781686cfe2759ce73ca4',
+        'reference' => 'd2f03353ec63fad2da3a4e7936193ad93e243f0a',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -385,6 +385,15 @@
                 0 => 'v9.40.1',
             ),
         ),
+        'intervention/image' => array(
+            'pretty_version' => '2.7.2',
+            'version' => '2.7.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../intervention/image',
+            'aliases' => array(),
+            'reference' => '04be355f8d6734c826045d02a1079ad658322dad',
+            'dev_requirement' => false,
+        ),
         'jaybizzle/crawler-detect' => array(
             'pretty_version' => 'v1.2.112',
             'version' => '1.2.112.0',
@@ -442,7 +451,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'd0cf5bd1edf6940194b8781686cfe2759ce73ca4',
+            'reference' => 'd2f03353ec63fad2da3a4e7936193ad93e243f0a',
             'dev_requirement' => false,
         ),
         'laravel/pint' => array(

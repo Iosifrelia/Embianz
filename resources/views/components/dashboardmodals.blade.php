@@ -63,8 +63,14 @@
                                     <input class="ml-1" type="date" id="end_date" name="end_date" required>
                                 </div>
                             </li>
+                            <li class="p-1 font-xl talign-c">
+                                <div class="element">
+                                    <label class="font-lg text-secondary ls-1" for="end_date">Image -</label>
+                                    <input type="file" class="ml-1"  id="category_image" name="category_image">
+                                </div>
+                            </li>
                             <li class="p-1 font-xl"><input type="submit" class="submit cursor-p" value="Add"
-                                    name="submit">
+                                    name="submit" >
                             </li>
                         </ul>
                     </form>
