@@ -45,7 +45,7 @@ class CategoryController extends Controller
             //save category image
 
             $image =$request->category_image;
-            $imagename=time().'.'.$image->getClientOriginalExtension();
+            $imagename=$request->category.'_main.'.$image->getClientOriginalExtension();
             $request->category_image->move('categories',$imagename);
             
             $imagecategory->category_id= $data->id;
