@@ -37,7 +37,7 @@
 .content-category {
   @extend .content;
   @include wh(50vw, auto);
-  top: 4.5rem;
+  top: $base-margin;
   padding: 0;
 
   #new, #delete, #edit{

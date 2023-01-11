@@ -45,12 +45,14 @@ class CategoryController extends Controller
             //save category image
 
             $image =$request->category_image;
-            $imagename=$request->category.'_main.'.$image->getClientOriginalExtension();
-            $request->category_image->move('categories',$imagename);
+            $image_main=$request->category.'_main.'.$image->getClientOriginalExtension();
+            $request->category_image->move('categories',$image_main);
+            // $image_search=$request->category.'_search.'.$image->getClientOriginalExtension();
+            // $request->category_image->move('categories',$image_search);
             
             $imagecategory->category_id= $data->id;
-            $imagecategory->img_main_path=$imagename;
-            $imagecategory->img_main_path=$imagename;
+            $imagecategory->img_main_path=$image_main;
+            $imagecategory->img_search_path=$image_main;
             $imagecategory->img_sequence=$request->image_sequence;
             
             $imagecategory->save();

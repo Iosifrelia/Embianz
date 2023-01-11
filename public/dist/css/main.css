@@ -3826,7 +3826,7 @@ th {
 .content-category {
   width: 50vw;
   height: auto;
-  top: 4.5rem;
+  top: 0.75rem;
   padding: 0;
 }
 .content-category #new, .content-category #delete, .content-category #edit {

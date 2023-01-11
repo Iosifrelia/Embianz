@@ -65,8 +65,14 @@
                             </li>
                             <li class="p-1 font-xl talign-c">
                                 <div class="element">
-                                    <label class="font-lg text-secondary ls-1" for="end_date">Image -</label>
+                                    <label class="font-lg text-secondary ls-1" for="end_date">Image main -</label>
                                     <input type="file" class="ml-1"  id="category_image" name="category_image">
+                                </div>
+                            </li>
+                            <li class="p-1 font-xl talign-c">
+                                <div class="element">
+                                    <label class="font-lg text-secondary ls-1" for="end_date">Image search -</label>
+                                    <input type="file" class="ml-1"  id="category_image_search" name="category_image_search">
                                 </div>
                             </li>
                             <li class="p-1 font-xl talign-c">
