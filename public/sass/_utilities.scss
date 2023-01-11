@@ -1,5 +1,5 @@
 @use 'sass:math';
-//maps of utilies
+//maps of utilies//
 $utilities: (
   "padding": (
     "prefix": "p",
@@ -73,8 +73,11 @@ $utilities: (
       "0": 0,
       "1": $base-margin,
       "2": $base-margin * 2,
+      "2-5": $base-margin * 3,
       "3": $base-margin * 4,
+      "3-5": $base-margin * 5,
       "4": $base-margin * 6,
+      "4-5": $base-margin * 7,
       "5": $base-margin * 8
     ),
   ),
@@ -127,6 +130,22 @@ $utilities: (
       "100": 1
     ),
   ),
+  "letter-spacing": (
+    "prefix": "ls",
+    "values": (
+      "0": 0,
+      "1": 1px,
+      "2": 2px,
+      "3": 3px,
+      "4": 4px,
+      "5": 5px,
+      "6": 6px,
+      "7": 7px,
+      "8": 8px,
+      "9": 9px,
+      "10": 10px
+    ),
+  ),
   "border-radius": (
     "prefix": "br",
     "values": (
@@ -135,6 +154,7 @@ $utilities: (
       "xs": math.div($base-border-radius, 4),
       "sm": math.div($base-border-radius, 2),
       "lg": $base-border-radius *2,
+      "xl": $base-border-radius *4,
       "full": 50%
     ),
   ),
@@ -158,6 +178,78 @@ $utilities: (
       "xxl": $font-size-xxl
     ),
   ),
+  "font-weight": (
+    "prefix": "fw",
+    "values": (
+      "100": 100,
+      "200": 200,
+      "300": 300,
+      "400": 400,
+      "500": 500,
+      "600": 600,
+      "700": 700,
+      "800": 800,
+      "900": 900
+    ),
+  ),
+  "position": (
+    "prefix": "pos",
+    "values": (
+      "fix": fixed,
+      "rel": relative,
+      "abs": absolute,
+      "static": static,
+      "sticky": sticky
+    ),
+  ),
+  "float": (
+    "prefix": "float",
+    "values": (
+      "l": left,
+      "r": right,
+      "n": none,
+      "inh": inherit
+    ),
+  ),
+  "gap": (
+    "prefix": "gap",
+    "values": (
+      "l": 1rem,
+      "2": 2rem,
+      "3": 3rem,
+      "4": 4rem
+    ),
+  ),
+  "align-items": (
+    "prefix": "align",
+    "values": (
+      "stretch": stretch,
+      "center": center,
+      "left": flex-start,
+      "right": flex-end,
+      "baseline": baseline,
+      "initial": initial,
+      "inherit": inherit
+    ),
+  ),
+  "text-align": (
+    "prefix": "talign",
+    "values": (
+      "l": left,
+      "r": right,
+      "c": center,
+      "j": justify,
+      "i": initial,
+      "in": inherit,
+    ),
+  ),
+  "cursor": (
+    "prefix": "cursor",
+    "values": (
+      "p": pointer,
+      
+    ),
+  ),
 );
 
 //generate utility classes
@@ -177,3 +269,5 @@ $utilities: (
     }
   }
  }
+
+

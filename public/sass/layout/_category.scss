@@ -1,0 +1,142 @@
+.add-category {
+  button {
+    svg {
+      @include wh(2rem, auto);
+
+      @media (max-width: 662px) {
+        @include wh(1rem, auto);
+      }
+
+      &:hover {
+        @include wh(2.1rem, auto);
+        cursor: pointer;
+
+        @media (max-width: 662px) {
+          @include wh(1.1rem, auto);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 662px) {
+  #title {
+    margin-top: 1rem;
+    font-size: $base-font-size;
+  }
+
+  .content-category {
+    width: 95vw;
+  }
+
+  #modal-category {
+    z-index: 1;
+  }
+}
+
+.content-category {
+  @extend .content;
+  @include wh(50vw, auto);
+  top: $base-margin;
+  padding: 0;
+
+  #new, #delete, #edit{
+    @include wh(10%, auto);
+  }
+
+  @media (max-width: 662px) {
+    width: 95vw;
+  }
+
+  #title {
+    color: $secondary;
+  }
+
+  .exit {
+    @include wh(3rem, auto);
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+    color: $secondary;
+  }
+
+  input {
+    @include wh(40%, auto);
+
+    @media (max-width: 662px) {
+      @include wh(70%, auto);
+    }
+
+    padding: $base-padding;
+    background-color: $bg;
+
+    &::placeholder {
+      color: $secondary;
+      opacity: 1;
+    }
+
+    transition: $transition;
+    -webkit-transition: width 0.4s ease-in-out;
+    color: $secondary;
+    border: 1px solid $secondary
+  }
+
+  .submit {
+    @include wh(20%, auto);
+    @media (max-width: 662px) {
+      @include wh(30%, auto);
+    }
+  }
+
+  .element {
+    // @include wh(85%, auto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    label {
+      @media (max-width: 662px) {
+        font-size: $base-font-size;
+      }
+    }
+
+
+    input {
+      @include wh(25%, auto);
+      @media (max-width: 662px) {
+        @include wh(25%, auto);
+      }
+
+      &::-webkit-calendar-picker-indicator {
+        filter: invert(0.8);
+      }
+    }
+  }
+
+  .reset {
+    border: 1px solid $secondary;
+    margin-right: 7.5%;
+    @include wh(18%, 3%);
+
+    @media (max-width: 662px) {
+      margin-right: 5%;
+    }
+  }
+
+  #category_image, #category_image_search{
+    @include wh(25%, auto);
+    @media (max-width: 662px) {
+      @include wh(60%, auto);
+    }
+  }
+}
+
+#confirmmodal-category {
+  .content-category {
+    top: 40%;
+    @include wh(30%, auto);
+    @media (max-width: 662px) {
+      @include wh(80%, auto);
+    }
+  }
+}
