@@ -77,7 +77,6 @@
                             </li>
                             <li class="p-1 font-xl talign-c">
                                 <div class="element">
-                                    {{-- <label class="font-lg text-secondary ls-1" for="end_date">Image Sequence -</label> --}}
                                     <input type="number" class="ml-1" name="image_sequence" placeholder="Image sequence" required>
                                 </div>
                             </li>

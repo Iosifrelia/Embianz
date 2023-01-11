@@ -45,14 +45,17 @@ class CategoryController extends Controller
             //save category image
 
             $image =$request->category_image;
+            $images =$request->category_image_search;
+
+            $image_search=$request->category.'_search.'.$images->getClientOriginalExtension();
             $image_main=$request->category.'_main.'.$image->getClientOriginalExtension();
+
             $request->category_image->move('categories',$image_main);
-            // $image_search=$request->category.'_search.'.$image->getClientOriginalExtension();
-            // $request->category_image->move('categories',$image_search);
-            
+            $request->category_image_search->move('categories',$image_search);
+
             $imagecategory->category_id= $data->id;
             $imagecategory->img_main_path=$image_main;
-            $imagecategory->img_search_path=$image_main;
+            $imagecategory->img_search_path=$image_search;
             $imagecategory->img_sequence=$request->image_sequence;
             
             $imagecategory->save();
@@ -75,8 +78,10 @@ class CategoryController extends Controller
     }
 
     public function delete(Request $request){
-        $category=category::find($request->hiddenid);
+        $id=$request->hiddenid;
+        $category=category::find($id);
         $category->delete();
+        
         return redirect()->back()->with('message','Category Deleted Succesfully!');
     }
 
