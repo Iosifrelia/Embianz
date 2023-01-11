@@ -3913,10 +3913,22 @@ th {
 .content-category .reset {
   border: 1px solid hsl(152deg, 92%, 86%);
   margin-right: 7.5%;
+  width: 18%;
+  height: 3%;
 }
 @media (max-width: 662px) {
   .content-category .reset {
     margin-right: 5%;
+  }
+}
+.content-category #category_image, .content-category #category_image_search {
+  width: 25%;
+  height: auto;
+}
+@media (max-width: 662px) {
+  .content-category #category_image, .content-category #category_image_search {
+    width: 60%;
+    height: auto;
   }
 }
 

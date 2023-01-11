@@ -116,9 +116,17 @@
   .reset {
     border: 1px solid $secondary;
     margin-right: 7.5%;
+    @include wh(18%, 3%);
 
     @media (max-width: 662px) {
       margin-right: 5%;
+    }
+  }
+
+  #category_image, #category_image_search{
+    @include wh(25%, auto);
+    @media (max-width: 662px) {
+      @include wh(60%, auto);
     }
   }
 }

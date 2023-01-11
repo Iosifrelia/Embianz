@@ -22,15 +22,15 @@
         <div>
             <span onclick="document.getElementById('modal-category').style.display='none'"
                 class="exit text-hover-secondary float-r">&times;</span>
-            <ul class="pt-1 mb-2">
+            <ul class="pt-1">
                 <li class="p-1 pt-1 font-xl">
                     <h1 id="title" class="talign-c font-xl ls-1 text-bg">{{ __('Add new category') }}</h1>
                 </li>
                 <li class="p-1 font-xl">
                     <form action="{{ url('/add_category') }}" method="POST" enctype="multipart/form-data">
                         @csrf
-                        <ul class="pt-1 mb-2">
-                            <li class="p-1 mb-1 font-xl">
+                        <ul class="pt-1">
+                            <li class="p-1 font-xl">
                                 <button class="reset bg-bg cursor-p text-secondary float-r p-1" type="reset">Clear
                                     form</button>
                             </li>
@@ -66,19 +66,19 @@
                             <li class="p-1 font-xl talign-c">
                                 <div class="element">
                                     <label class="font-lg text-secondary ls-1" for="end_date">Image main -</label>
-                                    <input type="file" class="ml-1"  id="category_image" name="category_image">
+                                    <input type="file" class="image ml-1"  id="category_image" name="category_image">
                                 </div>
                             </li>
                             <li class="p-1 font-xl talign-c">
                                 <div class="element">
                                     <label class="font-lg text-secondary ls-1" for="end_date">Image search -</label>
-                                    <input type="file" class="ml-1"  id="category_image_search" name="category_image_search">
+                                    <input type="file" class="image ml-1"  id="category_image_search" name="category_image_search">
                                 </div>
                             </li>
                             <li class="p-1 font-xl talign-c">
                                 <div class="element">
-                                    <label class="font-lg text-secondary ls-1" for="end_date">Image Sequence -</label>
-                                    <input type="number" name="image_sequence" placeholder="Image sequence" required>
+                                    {{-- <label class="font-lg text-secondary ls-1" for="end_date">Image Sequence -</label> --}}
+                                    <input type="number" class="ml-1" name="image_sequence" placeholder="Image sequence" required>
                                 </div>
                             </li>
                             <li class="p-1 font-xl"><input type="submit" class="submit cursor-p" value="Add"
